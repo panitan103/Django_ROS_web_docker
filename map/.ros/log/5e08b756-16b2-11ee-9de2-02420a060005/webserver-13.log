@@ -1,0 +1,20 @@
+[rospy.client][INFO] 2023-06-29 19:23:06,819: init_node, name[/webserver], pid[109]
+[xmlrpc][INFO] 2023-06-29 19:23:06,847: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2023-06-29 19:23:06,847: Started XML-RPC server [http://233a52f6384a:41331/]
+[rospy.impl.masterslave][INFO] 2023-06-29 19:23:06,847: _ready: http://233a52f6384a:41331/
+[rospy.init][INFO] 2023-06-29 19:23:06,849: ROS Slave URI: [http://233a52f6384a:41331/]
+[rospy.registration][INFO] 2023-06-29 19:23:06,849: Registering with master node http://localhost:11311
+[xmlrpc][INFO] 2023-06-29 19:23:06,850: xml rpc node: starting XML-RPC server
+[rospy.init][INFO] 2023-06-29 19:23:06,956: registered with master
+[rospy.rosout][INFO] 2023-06-29 19:23:06,957: initializing /rosout core topic
+[rospy.rosout][INFO] 2023-06-29 19:23:06,976: connected to core topic /rosout
+[rospy.simtime][INFO] 2023-06-29 19:23:06,981: initializing /clock core topic
+[rospy.simtime][INFO] 2023-06-29 19:23:06,991: connected to core topic /clock
+[roswww][INFO] 2023-06-29 19:23:07,170: /webserver : Configure webserver with cache:True, basic:False
+[roswww][INFO] 2023-06-29 19:23:07,174: /webserver : # of packages : 141
+[roswww][INFO] 2023-06-29 19:23:07,175: /webserver : Weg Page root : /
+[rospy.internal][INFO] 2023-06-29 19:23:07,297: topic[/rosout] adding connection to [/rosout], count 0
+[roswww][INFO] 2023-06-29 19:23:07,417: /webserver : Initialised
+[roswww][INFO] 2023-06-29 19:23:07,421: /webserver : Attempting to start webserver on port 8085
+[roswww][INFO] 2023-06-29 19:23:07,426: /webserver : Webserver successfully started on port 8085
+[rospy.internal][INFO] 2023-06-29 19:23:09,746: topic[/clock] adding connection to [http://233a52f6384a:36017/], count 0

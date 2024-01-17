@@ -1,0 +1,27 @@
+#viewer{
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0 0 40px;
+}
+#point_cloud{
+  display: flex;
+  flex-direction: row;
+}
+#console{
+  display: flex;
+  flex-direction: column;
+}
+.topic-control{
+  margin-top: 8px;
+}
+#console h1{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+#update_topic{
+  display: flex;
+  flex-direction: row;
+}

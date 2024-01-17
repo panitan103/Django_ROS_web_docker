@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<launch>
+
+  
+  <arg name="web_socket" default="false"/>
+
+  <arg name="mode" default="camera"/>
+  <arg name="stream" default="true"/>
+
+  <arg name="width_cam"           default="640"/>
+  <arg name="height_cam"          default="480"/>
+  <arg name="fps_cam"             default="6"/>
+  <arg name="camera_reset"        default="false"/>
+  <arg name="model"               default="false"/>
+  
+
+  <group if="$(arg web_socket)">
+    <include file="$(find django_ros)/launch/web_socket.launch"/>
+  </group>
+
+  <group if="$(eval mode == 'camera')">
+    <group unless="$(arg model)">
+      <include file="$(find realsense2_camera)/launch/rs_camera.launch">
+        <arg name="fisheye_width"       value="$(arg width_cam)" />
+        <arg name="fisheye_height"      value="$(arg height_cam)" />
+
+        <arg name="depth_width"         value="$(arg width_cam)" />
+        <arg name="depth_height"        value="$(arg height_cam)" />
+
+        <arg name="confidence_width"    value="$(arg width_cam)" />
+        <arg name="confidence_height"   value="$(arg height_cam)" />
+
+        <arg name="infra_width"         value="$(arg width_cam)" />
+        <arg name="infra_height"        value="$(arg height_cam)" />
+
+        <arg name="color_width"         value="$(arg width_cam)" />
+        <arg name="color_height"        value="$(arg height_cam)" />
+
+        <arg name="fisheye_fps"         value="$(arg fps_cam)"/>
+        <arg name="depth_fps"           value="$(arg fps_cam)"/>
+        <arg name="infra_fps"           value="$(arg fps_cam)"/>
+        <arg name="color_fps"           value="$(arg fps_cam)"/>
+
+        <arg name="enable_pointcloud"   value="true"/>
+        <arg name="align_depth"         value="true"/>
+        <arg name="initial_reset"       value="$(arg camera_reset)"/>
+        
+      </include>
+    </group>
+    <group if="$(arg model)">
+      <include file="$(find realsense2_camera)/launch/rs_d435_camera_with_model.launch">
+        <arg name="fisheye_width"       value="$(arg width_cam)" />
+        <arg name="fisheye_height"      value="$(arg height_cam)" />
+
+        <arg name="depth_width"         value="$(arg width_cam)" />
+        <arg name="depth_height"        value="$(arg height_cam)" />
+
+        <arg name="infra_width"         value="$(arg width_cam)" />
+        <arg name="infra_height"        value="$(arg height_cam)" />
+
+        <arg name="color_width"         value="$(arg width_cam)" />
+        <arg name="color_height"        value="$(arg height_cam)" />
+
+        <arg name="fisheye_fps"         value="$(arg fps_cam)"/>
+        <arg name="depth_fps"           value="$(arg fps_cam)"/>
+        <arg name="infra_fps"           value="$(arg fps_cam)"/>
+        <arg name="color_fps"           value="$(arg fps_cam)"/>
+
+        <arg name="enable_pointcloud"   value="true"/>
+        <arg name="align_depth"         value="true"/>
+        <arg name="initial_reset"       value="$(arg camera_reset)"/>
+        
+      </include>
+    </group>
+  </group>
+
+  <group if="$(eval mode == 'rgbd')">
+    <include file="$(find realsense2_camera)/launch/rs_rgbd.launch"/>
+  </group>
+
+  <group if="$(arg stream)">
+    <include file="$(find django_ros)/launch/image_stream.launch"/>
+  </group>
+
+</launch>

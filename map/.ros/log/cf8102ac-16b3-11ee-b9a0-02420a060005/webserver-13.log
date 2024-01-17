@@ -1,0 +1,26 @@
+[rospy.client][INFO] 2023-06-29 19:33:26,696: init_node, name[/webserver], pid[195]
+[xmlrpc][INFO] 2023-06-29 19:33:26,697: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2023-06-29 19:33:26,699: Started XML-RPC server [http://1befdf600173:46871/]
+[rospy.init][INFO] 2023-06-29 19:33:26,700: ROS Slave URI: [http://1befdf600173:46871/]
+[rospy.impl.masterslave][INFO] 2023-06-29 19:33:26,701: _ready: http://1befdf600173:46871/
+[rospy.registration][INFO] 2023-06-29 19:33:26,701: Registering with master node http://localhost:11311
+[xmlrpc][INFO] 2023-06-29 19:33:26,701: xml rpc node: starting XML-RPC server
+[rospy.init][INFO] 2023-06-29 19:33:26,801: registered with master
+[rospy.rosout][INFO] 2023-06-29 19:33:26,801: initializing /rosout core topic
+[rospy.rosout][INFO] 2023-06-29 19:33:26,813: connected to core topic /rosout
+[rospy.simtime][INFO] 2023-06-29 19:33:26,816: initializing /clock core topic
+[rospy.simtime][INFO] 2023-06-29 19:33:26,818: connected to core topic /clock
+[roswww][INFO] 2023-06-29 19:33:26,946: /webserver : Configure webserver with cache:True, basic:False
+[roswww][INFO] 2023-06-29 19:33:26,949: /webserver : # of packages : 141
+[roswww][INFO] 2023-06-29 19:33:26,952: /webserver : Weg Page root : /
+[roswww][INFO] 2023-06-29 19:33:27,050: /webserver : Initialised
+[roswww][INFO] 2023-06-29 19:33:27,058: /webserver : Attempting to start webserver on port 8085
+[roswww][INFO] 2023-06-29 19:33:27,066: /webserver : Webserver successfully started on port 8085
+[rospy.internal][INFO] 2023-06-29 19:33:27,069: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.internal][INFO] 2023-06-29 19:33:29,417: topic[/clock] adding connection to [http://1befdf600173:40613/], count 0
+[roswww][INFO] 2023-06-29 19:34:04,388: /webserver : Webserver shutting down
+[rospy.core][INFO] 2023-06-29 19:34:04,390: signal_shutdown [atexit]
+[rospy.internal][INFO] 2023-06-29 19:34:04,397: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2023-06-29 19:34:04,398: topic[/clock] removing connection to http://1befdf600173:40613/
+[rospy.internal][INFO] 2023-06-29 19:34:04,399: topic[/clock] removing connection to http://1befdf600173:40613/
+[rospy.impl.masterslave][INFO] 2023-06-29 19:34:04,399: atexit

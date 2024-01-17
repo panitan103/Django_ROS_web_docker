@@ -1,0 +1,23 @@
+[rospy.client][INFO] 2023-06-29 19:34:33,011: init_node, name[/spawn_urdf], pid[477]
+[xmlrpc][INFO] 2023-06-29 19:34:33,014: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2023-06-29 19:34:33,023: Started XML-RPC server [http://1befdf600173:36669/]
+[rospy.impl.masterslave][INFO] 2023-06-29 19:34:33,023: _ready: http://1befdf600173:36669/
+[rospy.init][INFO] 2023-06-29 19:34:33,023: ROS Slave URI: [http://1befdf600173:36669/]
+[rospy.registration][INFO] 2023-06-29 19:34:33,024: Registering with master node http://localhost:11311
+[xmlrpc][INFO] 2023-06-29 19:34:33,025: xml rpc node: starting XML-RPC server
+[rospy.init][INFO] 2023-06-29 19:34:33,132: registered with master
+[rospy.rosout][INFO] 2023-06-29 19:34:33,132: initializing /rosout core topic
+[rospy.rosout][INFO] 2023-06-29 19:34:33,157: connected to core topic /rosout
+[rospy.simtime][INFO] 2023-06-29 19:34:33,161: initializing /clock core topic
+[rospy.simtime][INFO] 2023-06-29 19:34:33,170: connected to core topic /clock
+[rosout][INFO] 2023-06-29 19:34:33,175: Loading model XML from ros parameter robot_description
+[rosout][INFO] 2023-06-29 19:34:33,178: Waiting for service /gazebo/spawn_urdf_model
+[rospy.internal][INFO] 2023-06-29 19:34:33,377: topic[/rosout] adding connection to [/rosout], count 0
+[rosout][INFO] 2023-06-29 19:34:34,131: Calling service /gazebo/spawn_urdf_model
+[rospy.internal][INFO] 2023-06-29 19:34:34,306: topic[/clock] adding connection to [http://1befdf600173:36901/], count 0
+[rosout][INFO] 2023-06-29 19:34:34,480: Spawn status: SpawnModel: Successfully spawned entity
+[rospy.core][INFO] 2023-06-29 19:34:34,482: signal_shutdown [atexit]
+[rospy.internal][INFO] 2023-06-29 19:34:34,492: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2023-06-29 19:34:34,495: topic[/clock] removing connection to http://1befdf600173:36901/
+[rospy.internal][INFO] 2023-06-29 19:34:34,495: topic[/clock] removing connection to http://1befdf600173:36901/
+[rospy.impl.masterslave][INFO] 2023-06-29 19:34:34,496: atexit

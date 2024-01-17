@@ -1,0 +1,110 @@
+{%load static%}
+<!DOCTYPE html>
+<html>
+<head>
+        
+    <title>ROS Django WEB</title>
+    
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+    <link rel="shortcut icon" type="image/png" href="{% static 'favicon.ico' %}"/>
+    <link rel="stylesheet" href='{% static "css/nav.css"%}'>
+    <link rel="stylesheet" href='{% static "css/side.css"%}'>
+    <link rel="stylesheet" href='{% static "css/body.css"%}'>
+    
+    
+    
+    {% block css%}
+
+
+    {%endblock%}
+        
+        
+        
+        
+</head>
+<body >
+    
+    <nav class="nav-bar">
+        <span class="nav-toggle" id="js-nav-toggle" >
+            <img src="{% static "image/Hamburger_white_icon.png"%}" >
+            <div class="dropdown-content" id="dropdown">
+                <a href="/">Home</a>
+                <a href="/setting">Setting</a>
+                <a href="/contact">Contact us</a>
+
+            </div>
+            
+        </span>
+        
+        
+        <a href="/"><img src="{% static "image/ros_logo.svg"%}" class='logo-image' ></a>
+        
+        <div class="nav-tab">
+            <a href="/">Home</a>
+            <a href="/setting/">Setting</a>
+            
+        </div>
+        <div class="nav-contact">
+            <a href="/contact">Contact us</a>
+        </div>
+
+    </nav>
+    <div class="grid-container" id="grid-container-script"> 
+        <span class="grid-sidebar" id="grid-sidebar-script">
+            <img src="{% static "image/right-arrow.png"%}" id="grid-sidebar-toggle">
+            <img src="{% static "image/left-arrow.png"%}" style="display: none " id="grid-sidebar-toggle-left">
+            <div class="grid-sidebar-detail" id="grid-sidebar-detail-script" >
+                <span class="head-list" id="head-list-script-1">
+                    <p> Status </p>
+                    <div class="list-menu" id="js-list-menu-1">
+                        <a href="/"><span id="status"></span></a>
+                    </div>
+                </span>
+                <span class="head-list" id="head-list-script-1">
+                    <p> ROS </p>
+                    <div class="list-menu" id="js-list-menu-1">
+                        
+                        <a href="/image_stream">Image</a>
+                        <a href="/mapping">Mapping</a>
+                        <a href="/navigate">Navigate</a>
+                        <a href="/map_3d">Map 3D</a>
+                        <a href="/point_cloud">Point Cloud</a>
+                        <a href="/model_3d">Model 3D</a>
+                       
+                    </div>
+                </span>
+                <span class="head-list" id="head-list-script-1">
+                    <p> TEST </p>
+                    <div class="list-menu" id="js-list-menu-1">
+                        <a href="/test">Test</a>
+
+                    </div>
+                </span>
+                
+            </div>
+        </span>
+        
+        <div class="grid-body" onload="init()">
+
+            
+                {% block content%}
+
+
+                {%endblock%}
+            </div>
+            
+        </div>
+    </div>
+    <script src="{% static "js/jquery-3.6.0.min.js"%}"></script>
+    <script src="{% static "js/roslib.js"%}"></script>
+    <script src="{% static "js/ros_web_socket.js"%}"></script>
+    <script src="{% static "js/nav.js"%}"></script>
+    <script src="{% static "js/body.js"%}"></script>
+    <script src="{% static "js/side.js"%}"></script>
+    {% block script%}
+    
+
+    {%endblock%}
+    
+</body>
+</html>

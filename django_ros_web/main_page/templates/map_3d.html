@@ -1,0 +1,25 @@
+{%extends 'layout.html'%}
+{%load static%}
+{% block css%}
+<link rel="stylesheet" href="{% static "css/content/map.css"%}">
+
+{%endblock%}
+
+{% block content%}
+<h1>Map 3D</h1>
+
+
+<div id="viewer"></div>
+{%endblock%}
+
+{% block script%}
+
+<script src="{% static "js/three.js"%}"></script>
+<script src="{% static "js/easeljs.min.js"%}"></script>
+<script src="{% static "js/eventemitter2.min.js"%}"></script>
+<script src="{% static "js/ros3d.js"%}"></script>
+<script src="{% static "js/content/map_3d.js"%}"></script>
+
+
+
+{%endblock%}

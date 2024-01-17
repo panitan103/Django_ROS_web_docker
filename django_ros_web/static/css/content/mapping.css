@@ -1,0 +1,38 @@
+#nav{
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0 0 40px;
+
+}
+
+#mapping{
+  display: flex;
+  flex-direction: row;
+}
+#console{
+  display: flex;
+  flex-direction: column;
+  
+}
+
+#console h1,#robot_control,#status-control{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.status-control,#robot_control,#map_control{
+  margin-top: 8px;
+}
+
+
+#robot_control{
+  display: flex;
+  flex-direction: column;
+}
+
+#robot_control #linear_control,#angular_control{
+  display: flex;
+  flex-direction: row;
+}

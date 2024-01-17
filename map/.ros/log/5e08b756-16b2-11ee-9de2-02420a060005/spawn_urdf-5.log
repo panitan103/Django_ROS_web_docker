@@ -1,0 +1,23 @@
+[rospy.client][INFO] 2023-06-29 19:23:06,288: init_node, name[/spawn_urdf], pid[85]
+[xmlrpc][INFO] 2023-06-29 19:23:06,289: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2023-06-29 19:23:06,290: Started XML-RPC server [http://233a52f6384a:33495/]
+[rospy.init][INFO] 2023-06-29 19:23:06,290: ROS Slave URI: [http://233a52f6384a:33495/]
+[rospy.impl.masterslave][INFO] 2023-06-29 19:23:06,291: _ready: http://233a52f6384a:33495/
+[rospy.registration][INFO] 2023-06-29 19:23:06,307: Registering with master node http://localhost:11311
+[xmlrpc][INFO] 2023-06-29 19:23:06,307: xml rpc node: starting XML-RPC server
+[rospy.init][INFO] 2023-06-29 19:23:06,391: registered with master
+[rospy.rosout][INFO] 2023-06-29 19:23:06,392: initializing /rosout core topic
+[rospy.rosout][INFO] 2023-06-29 19:23:06,469: connected to core topic /rosout
+[rospy.simtime][INFO] 2023-06-29 19:23:06,478: initializing /clock core topic
+[rospy.simtime][INFO] 2023-06-29 19:23:06,551: connected to core topic /clock
+[rosout][INFO] 2023-06-29 19:23:06,635: Loading model XML from ros parameter robot_description
+[rosout][INFO] 2023-06-29 19:23:06,707: Waiting for service /gazebo/spawn_urdf_model
+[rospy.internal][INFO] 2023-06-29 19:23:06,769: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.internal][INFO] 2023-06-29 19:23:08,863: topic[/clock] adding connection to [http://233a52f6384a:36017/], count 0
+[rosout][INFO] 2023-06-29 19:23:08,875: Calling service /gazebo/spawn_urdf_model
+[rosout][INFO] 2023-06-29 19:23:09,431: Spawn status: SpawnModel: Successfully spawned entity
+[rospy.core][INFO] 2023-06-29 19:23:09,438: signal_shutdown [atexit]
+[rospy.internal][INFO] 2023-06-29 19:23:09,442: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2023-06-29 19:23:09,443: topic[/clock] removing connection to http://233a52f6384a:36017/
+[rospy.internal][INFO] 2023-06-29 19:23:09,443: topic[/clock] removing connection to http://233a52f6384a:36017/
+[rospy.impl.masterslave][INFO] 2023-06-29 19:23:09,445: atexit

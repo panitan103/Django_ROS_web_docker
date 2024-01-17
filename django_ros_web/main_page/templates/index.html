@@ -1,0 +1,16 @@
+{%extends 'layout.html'%}
+{%load static%}
+{% block css%}
+
+
+{%endblock%}
+{% block content%}
+<h1>Simple text Example</h1>
+<p>Test by command "rostopic pub /txt_msg std_msgs/String "data: 'Test message'" -1"</p>
+<p>Last /txt_msg received: <span id="msg"></span></p>
+
+{%endblock%}
+{% block script%}
+
+<script src="{% static "js/ros_text_test.js"%}"></script>
+{%endblock%}

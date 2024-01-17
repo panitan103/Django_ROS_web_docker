@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<launch>
+
+  
+  <arg name="web_socket" default="false"/>
+
+  <group if="$(arg web_socket)">
+    <include file="$(find django_ros)/launch/web_socket.launch"/>
+  </group>
+
+  <node name="web_video_server" pkg="web_video_server" type="web_video_server" />
+
+
+</launch>

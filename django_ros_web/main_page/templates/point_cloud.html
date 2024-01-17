@@ -1,0 +1,40 @@
+{%extends 'layout.html'%}
+{%load static%}
+{% block css%}
+<link rel="stylesheet" href="{% static "css/content/point_cloud.css"%}">
+
+{%endblock%}
+
+{% block content%}
+<div id="point_cloud">
+    <div id="console">
+        <h1>Point Cloud</h1>
+
+        <div class="topic-control">
+            
+            topic: <br>
+            <input type="text" id="point_topic" value="/camera/depth/color/points"><br>
+            fixed frame: <br>
+            <input type="text" id="frame_topic" value="/base_link"><br>
+        </div>
+        
+        <div id="update">
+            <button type="button" id="update_topic">Update point</button>
+        </div>
+        
+
+    </div>
+    <div id="viewer"></div>
+</div>  
+{%endblock%}
+
+{% block script%}
+
+<script src="{% static "js/three.js"%}"></script>
+<script src="{% static "js/eventemitter2.min.js"%}"></script>
+<script src="{% static "js/ros3d.js"%}"></script>
+<script src="{% static "js/content/point_cloud.js"%}"></script>
+
+
+
+{%endblock%}

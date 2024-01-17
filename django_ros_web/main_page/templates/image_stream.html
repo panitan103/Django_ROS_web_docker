@@ -1,0 +1,36 @@
+{%extends 'layout.html'%}
+{%load static%}
+{% block css%}
+<link rel="stylesheet" href="{% static "css/content/image_stream.css"%}">
+
+{%endblock%}
+
+{% block content%}
+<div id="image_stream">
+    <div id="console">
+        <h1>Image topic</h1>
+
+        <div class="topic-control">
+            
+            topic: <br>
+            <input type="text" id="image_topic" value="/camera"><br>
+            
+        </div>
+        
+        <div id="update">
+            <a href="#" id="link_topic" target="_blank"><button  type="button" >Check topic</button></a>
+            <button type="button" id="update_topic">Update</button>
+        </div>
+        
+        
+
+    </div>
+    <div id="stream"></div>
+</div>  
+{%endblock%}
+
+{% block script%}
+
+<script src="{% static "js/content/image_stream.js"%}"></script>
+
+{%endblock%}

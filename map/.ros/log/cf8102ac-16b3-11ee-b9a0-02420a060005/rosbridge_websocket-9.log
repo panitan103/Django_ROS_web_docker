@@ -1,0 +1,46 @@
+[rospy.client][INFO] 2023-06-29 19:33:28,054: init_node, name[/rosbridge_websocket], pid[180]
+[xmlrpc][INFO] 2023-06-29 19:33:28,055: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2023-06-29 19:33:28,056: Started XML-RPC server [http://1befdf600173:36279/]
+[rospy.init][INFO] 2023-06-29 19:33:28,057: ROS Slave URI: [http://1befdf600173:36279/]
+[rospy.impl.masterslave][INFO] 2023-06-29 19:33:28,057: _ready: http://1befdf600173:36279/
+[rospy.registration][INFO] 2023-06-29 19:33:28,064: Registering with master node http://localhost:11311
+[xmlrpc][INFO] 2023-06-29 19:33:28,064: xml rpc node: starting XML-RPC server
+[rospy.init][INFO] 2023-06-29 19:33:28,158: registered with master
+[rospy.rosout][INFO] 2023-06-29 19:33:28,159: initializing /rosout core topic
+[rospy.rosout][INFO] 2023-06-29 19:33:28,168: connected to core topic /rosout
+[rospy.simtime][INFO] 2023-06-29 19:33:28,174: initializing /clock core topic
+[rospy.simtime][INFO] 2023-06-29 19:33:28,206: connected to core topic /clock
+[rosout][INFO] 2023-06-29 19:33:28,227: Rosbridge WebSocket server started at ws://0.0.0.0:9090
+[rospy.internal][INFO] 2023-06-29 19:33:28,519: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.internal][INFO] 2023-06-29 19:33:29,387: topic[/clock] adding connection to [http://1befdf600173:40613/], count 0
+[rosout][INFO] 2023-06-29 19:33:32,034: Client connected.  1 clients total.
+[rosout][INFO] 2023-06-29 19:33:33,559: Client disconnected. 0 clients total.
+[rosout][INFO] 2023-06-29 19:33:33,697: Client connected.  1 clients total.
+[rosout][INFO] 2023-06-29 19:33:34,027: [Client 0] Subscribed to /map
+[rospy.internal][INFO] 2023-06-29 19:33:34,051: topic[/map] adding connection to [http://1befdf600173:45751/], count 0
+[rosout][INFO] 2023-06-29 19:33:34,030: [Client 1] Subscribed to /map
+[rosout][INFO] 2023-06-29 19:33:34,249: [Client 1] Subscribed to /move_base/status
+[rosout][INFO] 2023-06-29 19:33:34,297: [Client 1] Subscribed to /move_base/feedback
+[rosout][INFO] 2023-06-29 19:33:34,337: [Client 1] Subscribed to /move_base/result
+[rosout][INFO] 2023-06-29 19:33:34,379: [Client 1] Subscribed to /robot_pose
+[rospy.internal][INFO] 2023-06-29 19:33:34,415: topic[/robot_pose] adding connection to [http://1befdf600173:36385/], count 0
+[rosout][INFO] 2023-06-29 19:33:34,534: [Client 1] Subscribed to /tf2_web_republisher/feedback
+[rospy.internal][INFO] 2023-06-29 19:33:34,598: topic[/tf2_web_republisher/feedback] adding connection to [http://1befdf600173:36199/], count 0
+[rospy.internal][INFO] 2023-06-29 19:33:34,924: topic[/tf2_web_republisher/goal] adding connection to [/tf2_web_republisher], count 0
+[rospy.internal][INFO] 2023-06-29 19:33:34,927: topic[/tf2_web_republisher/cancel] adding connection to [/tf2_web_republisher], count 0
+[rospy.internal][INFO] 2023-06-29 19:33:40,855: topic[/cmd_vel] adding connection to [/gazebo], count 0
+[rospy.core][INFO] 2023-06-29 19:34:04,403: signal_shutdown [signal-2]
+[rospy.internal][INFO] 2023-06-29 19:34:04,432: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2023-06-29 19:34:04,433: topic[/tf2_web_republisher/goal] removing connection to /tf2_web_republisher
+[rospy.internal][INFO] 2023-06-29 19:34:04,433: topic[/tf2_web_republisher/cancel] removing connection to /tf2_web_republisher
+[rospy.internal][INFO] 2023-06-29 19:34:04,434: topic[/cmd_vel] removing connection to /gazebo
+[rospy.internal][INFO] 2023-06-29 19:34:04,434: topic[/clock] removing connection to http://1befdf600173:40613/
+[rospy.internal][INFO] 2023-06-29 19:34:04,436: topic[/map] removing connection to http://1befdf600173:45751/
+[rospy.internal][INFO] 2023-06-29 19:34:04,437: topic[/map] removing connection to http://1befdf600173:45751/
+[rospy.internal][INFO] 2023-06-29 19:34:04,438: topic[/robot_pose] removing connection to http://1befdf600173:36385/
+[rospy.internal][INFO] 2023-06-29 19:34:04,438: topic[/robot_pose] removing connection to http://1befdf600173:36385/
+[rospy.internal][INFO] 2023-06-29 19:34:04,439: topic[/tf2_web_republisher/feedback] removing connection to http://1befdf600173:36199/
+[rospy.internal][INFO] 2023-06-29 19:34:04,439: topic[/tf2_web_republisher/feedback] removing connection to http://1befdf600173:36199/
+[rospy.impl.masterslave][INFO] 2023-06-29 19:34:04,439: signal-2
+[rosout][INFO] 2023-06-29 19:34:05,077: Client disconnected. 0 clients total.
+[rospy.core][INFO] 2023-06-29 19:34:05,093: signal_shutdown [atexit]

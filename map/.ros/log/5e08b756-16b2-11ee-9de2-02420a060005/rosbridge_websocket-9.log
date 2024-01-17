@@ -1,0 +1,31 @@
+[rospy.client][INFO] 2023-06-29 19:23:07,500: init_node, name[/rosbridge_websocket], pid[93]
+[xmlrpc][INFO] 2023-06-29 19:23:07,513: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2023-06-29 19:23:07,514: Started XML-RPC server [http://233a52f6384a:43593/]
+[rospy.impl.masterslave][INFO] 2023-06-29 19:23:07,514: _ready: http://233a52f6384a:43593/
+[rospy.init][INFO] 2023-06-29 19:23:07,517: ROS Slave URI: [http://233a52f6384a:43593/]
+[rospy.registration][INFO] 2023-06-29 19:23:07,524: Registering with master node http://localhost:11311
+[xmlrpc][INFO] 2023-06-29 19:23:07,524: xml rpc node: starting XML-RPC server
+[rospy.init][INFO] 2023-06-29 19:23:07,618: registered with master
+[rospy.rosout][INFO] 2023-06-29 19:23:07,618: initializing /rosout core topic
+[rospy.rosout][INFO] 2023-06-29 19:23:07,625: connected to core topic /rosout
+[rospy.simtime][INFO] 2023-06-29 19:23:07,626: initializing /clock core topic
+[rospy.simtime][INFO] 2023-06-29 19:23:07,635: connected to core topic /clock
+[rosout][INFO] 2023-06-29 19:23:07,709: Rosbridge WebSocket server started at ws://0.0.0.0:9090
+[rospy.internal][INFO] 2023-06-29 19:23:07,919: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.internal][INFO] 2023-06-29 19:23:08,906: topic[/clock] adding connection to [http://233a52f6384a:36017/], count 0
+[rosout][INFO] 2023-06-29 19:23:10,467: Client connected.  1 clients total.
+[rosout][INFO] 2023-06-29 19:23:12,303: [Client 0] Subscribed to /map
+[rosout][INFO] 2023-06-29 19:23:12,308: [Client 0] Subscribed to /map
+[rospy.internal][INFO] 2023-06-29 19:23:12,329: topic[/map] adding connection to [http://233a52f6384a:43315/], count 0
+[rosout][INFO] 2023-06-29 19:23:12,487: Client disconnected. 0 clients total.
+[rosout][INFO] 2023-06-29 19:23:12,544: Client connected.  1 clients total.
+[rosout][INFO] 2023-06-29 19:23:12,709: [Client 1] Subscribed to /map
+[rosout][INFO] 2023-06-29 19:23:12,846: [Client 1] Subscribed to /move_base/status
+[rosout][INFO] 2023-06-29 19:23:12,866: [Client 1] Subscribed to /move_base/feedback
+[rosout][INFO] 2023-06-29 19:23:12,875: [Client 1] Subscribed to /move_base/result
+[rosout][INFO] 2023-06-29 19:23:12,890: [Client 1] Subscribed to /robot_pose
+[rospy.internal][INFO] 2023-06-29 19:23:12,948: topic[/robot_pose] adding connection to [http://233a52f6384a:40437/], count 0
+[rosout][INFO] 2023-06-29 19:23:12,980: [Client 1] Subscribed to /tf2_web_republisher/feedback
+[rospy.internal][INFO] 2023-06-29 19:23:13,009: topic[/tf2_web_republisher/feedback] adding connection to [http://233a52f6384a:36619/], count 0
+[rospy.internal][INFO] 2023-06-29 19:23:13,270: topic[/tf2_web_republisher/goal] adding connection to [/tf2_web_republisher], count 0
+[rospy.internal][INFO] 2023-06-29 19:23:13,272: topic[/tf2_web_republisher/cancel] adding connection to [/tf2_web_republisher], count 0

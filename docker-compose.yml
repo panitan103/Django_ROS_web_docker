@@ -1,0 +1,29 @@
+version: "3"
+services:
+  django_ros:
+    image: django_ros:latest
+    restart: unless-stopped
+    ports:
+      - 11311:11311
+      - 9090:9090
+      - 8000:8000
+
+    tty : True
+    stdin_open : True
+    #command: sh -c "python3 manage.py runserver 0:8000"
+    command: sh -c "roslaunch django_ros django_ros_web.launch turtle:=true mode_turtles:=mapping slam:=gmapping web_socket:=true | python3 manage.py runserver 0:8000"
+    #command: sh -c "roslaunch django_ros django_ros_web.launch turtle:=true mode_turtles:=navigate map_location:=$HOME/map.yaml web_socket:=true | python3 manage.py runserver 0:8000"
+    volumes: 
+      - /home/lubuntu/docker/django/map:/root
+    networks:
+      django_ros:
+        ipv4_address: 10.6.0.5
+
+
+networks:
+  django_ros:
+    driver: bridge
+    ipam:
+     config:
+       - subnet: 10.6.0.0/16
+         gateway: 10.6.0.1

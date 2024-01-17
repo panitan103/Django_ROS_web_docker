@@ -1,0 +1,45 @@
+{%extends 'layout.html'%}
+{%load static%}
+{% block css%}
+<link rel="stylesheet" href="{% static "css/content/joy.css"%}">
+<link rel="stylesheet" href="{% static "css/content/navigate.css"%}">
+
+{%endblock%}
+
+{% block content%}
+<div id="navigate">
+    <div id="console">
+        <h1>Navigation</h1>
+
+        <div class="status-control">
+            <p>Mode : <span id="nav_mode"></span> </p>
+        </div>
+        <form method="POST">
+            {% csrf_token %}
+            <div id="map_control">
+                <button type="button" id="load_map">Load map</button>
+                <button type="button" id="clear_map">Clear map</button>
+            </div>
+            <div id="map_control">
+                <button type="button" id="home_mode">Pose estimate</button>
+                <button type="button" id="navigate_mode">Navigate</button>
+            </div>
+            <div id="navigate_control">
+                <button type="button" id="stop_navigate">Stop navigate</button>
+            </div>
+        </form>
+
+    </div>
+    <div id="nav"></div>
+</div>  
+
+{%endblock%}
+
+{% block script%}
+<script src="{% static "js/easeljs.min.js"%}"></script>
+<script src="{% static "js/eventemitter2.min.js"%}"></script>
+<script src="{% static "js/ros2d.js"%}"></script>
+<!--<script src="{% static "js/nav2d.js"%}"></script>-->
+<script src="{% static "js/content/navigate.js"%}"></script>
+
+{%endblock%}

@@ -1,0 +1,323 @@
+[roslaunch][INFO] 2023-06-29 19:33:23,224: Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+[roslaunch][INFO] 2023-06-29 19:33:23,235: Done checking log file disk usage. Usage is <1GB.
+[roslaunch][INFO] 2023-06-29 19:33:23,235: roslaunch starting with args ['/opt/ros/noetic/bin/roslaunch', 'django_ros', 'tesr_ros_web.launch', 'turtle:=true', 'mode_turtles:=mapping', 'slam:=gmapping', 'web_socket:=true']
+[roslaunch][INFO] 2023-06-29 19:33:23,237: roslaunch env is environ({'ROS_VERSION': '1', 'PKG_CONFIG_PATH': '/django_ros_ws/devel/lib/pkgconfig:/opt/ros/noetic/lib/pkgconfig', 'ROS_PYTHON_VERSION': '3', 'HOSTNAME': '1befdf600173', 'ROS_PACKAGE_PATH': '/django_ros_ws/src:/opt/ros/noetic/share', 'ROSLISP_PACKAGE_DIRECTORIES': '/django_ros_ws/devel/share/common-lisp', 'PWD': '/root', 'HOME': '/root', 'LANG': 'C.UTF-8', 'ROS_ETC_DIR': '/opt/ros/noetic/etc/ros', 'CMAKE_PREFIX_PATH': '/django_ros_ws/devel:/opt/ros/noetic', 'PYTHONPATH': '/opt/ros/noetic/lib/python3/dist-packages', 'TERM': 'xterm', 'SHLVL': '1', 'TURTLEBOT3_MODEL': 'burger', 'ROS_MASTER_URI': 'http://localhost:11311', 'LD_LIBRARY_PATH': '/django_ros_ws/devel/lib:/opt/ros/noetic/lib', 'LC_ALL': 'C.UTF-8', 'PATH': '/opt/ros/noetic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'ROS_ROOT': '/opt/ros/noetic/share/ros', 'ROS_DISTRO': 'noetic', 'OLDPWD': '/django_ros_web', '_': '/opt/ros/noetic/bin/roslaunch', 'ROS_LOG_FILENAME': '/root/.ros/log/cf8102ac-16b3-11ee-b9a0-02420a060005/roslaunch-1befdf600173-135.log'})
+[roslaunch][INFO] 2023-06-29 19:33:23,237: starting in server mode
+[roslaunch.parent][INFO] 2023-06-29 19:33:23,238: starting roslaunch parent run
+[roslaunch][INFO] 2023-06-29 19:33:23,241: loading roscore config file /opt/ros/noetic/etc/ros/roscore.xml
+[roslaunch][INFO] 2023-06-29 19:33:23,393: Added core node of type [rosout/rosout] in namespace [/]
+[roslaunch.config][INFO] 2023-06-29 19:33:23,393: loading config file /django_ros_ws/src/django_ros/launch/tesr_ros_web.launch
+[roslaunch][INFO] 2023-06-29 19:33:23,395: Added node of type [django_ros/django_ros_run.bash] in namespace [/]
+[roslaunch][INFO] 2023-06-29 19:33:23,420: Added node of type [gazebo_ros/gzserver] in namespace [/]
+[roslaunch][INFO] 2023-06-29 19:33:23,421: Added node of type [gazebo_ros/gzclient] in namespace [/]
+[roslaunch][INFO] 2023-06-29 19:33:23,750: Added node of type [gazebo_ros/spawn_model] in namespace [/]
+[roslaunch][INFO] 2023-06-29 19:33:24,037: Added node of type [robot_state_publisher/robot_state_publisher] in namespace [/]
+[roslaunch][INFO] 2023-06-29 19:33:24,045: Added node of type [gmapping/slam_gmapping] in namespace [/]
+[roslaunch][INFO] 2023-06-29 19:33:24,048: Added node of type [rviz/rviz] in namespace [/]
+[roslaunch][INFO] 2023-06-29 19:33:24,054: Added node of type [rosbridge_server/rosbridge_websocket] in namespace [/]
+[roslaunch][INFO] 2023-06-29 19:33:24,055: Added node of type [rosapi/rosapi_node] in namespace [/]
+[roslaunch][INFO] 2023-06-29 19:33:24,055: Added node of type [tf2_web_republisher/tf2_web_republisher] in namespace [/]
+[roslaunch][INFO] 2023-06-29 19:33:24,055: Added node of type [robot_pose_publisher/robot_pose_publisher] in namespace [/]
+[roslaunch][INFO] 2023-06-29 19:33:24,055: Added node of type [django_ros/webserver.py] in namespace [/]
+[roslaunch][INFO] 2023-06-29 19:33:24,056: ... selected machine [] for node of type [django_ros/django_ros_run.bash]
+[roslaunch][INFO] 2023-06-29 19:33:24,056: ... selected machine [] for node of type [gazebo_ros/gzserver]
+[roslaunch][INFO] 2023-06-29 19:33:24,056: ... selected machine [] for node of type [gazebo_ros/gzclient]
+[roslaunch][INFO] 2023-06-29 19:33:24,056: ... selected machine [] for node of type [gazebo_ros/spawn_model]
+[roslaunch][INFO] 2023-06-29 19:33:24,056: ... selected machine [] for node of type [robot_state_publisher/robot_state_publisher]
+[roslaunch][INFO] 2023-06-29 19:33:24,056: ... selected machine [] for node of type [gmapping/slam_gmapping]
+[roslaunch][INFO] 2023-06-29 19:33:24,057: ... selected machine [] for node of type [rviz/rviz]
+[roslaunch][INFO] 2023-06-29 19:33:24,057: ... selected machine [] for node of type [rosbridge_server/rosbridge_websocket]
+[roslaunch][INFO] 2023-06-29 19:33:24,057: ... selected machine [] for node of type [rosapi/rosapi_node]
+[roslaunch][INFO] 2023-06-29 19:33:24,057: ... selected machine [] for node of type [tf2_web_republisher/tf2_web_republisher]
+[roslaunch][INFO] 2023-06-29 19:33:24,057: ... selected machine [] for node of type [robot_pose_publisher/robot_pose_publisher]
+[roslaunch][INFO] 2023-06-29 19:33:24,058: ... selected machine [] for node of type [django_ros/webserver.py]
+[roslaunch.pmon][INFO] 2023-06-29 19:33:24,062: start_process_monitor: creating ProcessMonitor
+[roslaunch.pmon][INFO] 2023-06-29 19:33:24,062: created process monitor <ProcessMonitor(ProcessMonitor-1, initial daemon)>
+[roslaunch.pmon][INFO] 2023-06-29 19:33:24,062: start_process_monitor: ProcessMonitor started
+[roslaunch.parent][INFO] 2023-06-29 19:33:24,062: starting parent XML-RPC server
+[roslaunch.server][INFO] 2023-06-29 19:33:24,063: starting roslaunch XML-RPC server
+[roslaunch.server][INFO] 2023-06-29 19:33:24,063: waiting for roslaunch XML-RPC server to initialize
+[xmlrpc][INFO] 2023-06-29 19:33:24,063: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2023-06-29 19:33:24,063: Started XML-RPC server [http://1befdf600173:43407/]
+[xmlrpc][INFO] 2023-06-29 19:33:24,063: xml rpc node: starting XML-RPC server
+[roslaunch][INFO] 2023-06-29 19:33:24,075: started roslaunch server http://1befdf600173:43407/
+[roslaunch.parent][INFO] 2023-06-29 19:33:24,075: ... parent XML-RPC server started
+[roslaunch][INFO] 2023-06-29 19:33:24,081: master.is_running[http://localhost:11311]
+[roslaunch][INFO] 2023-06-29 19:33:24,082: auto-starting new master
+[roslaunch][INFO] 2023-06-29 19:33:24,082: create_master_process: rosmaster, /opt/ros/noetic/share/ros, 11311, 3, None, False
+[roslaunch][INFO] 2023-06-29 19:33:24,082: process[master]: launching with args [['rosmaster', '--core', '-p', '11311', '-w', '3']]
+[roslaunch.pmon][INFO] 2023-06-29 19:33:24,083: ProcessMonitor.register[master]
+[roslaunch.pmon][INFO] 2023-06-29 19:33:24,083: ProcessMonitor.register[master] complete
+[roslaunch][INFO] 2023-06-29 19:33:24,083: process[master]: starting os process
+[roslaunch][INFO] 2023-06-29 19:33:24,083: process[master]: start w/ args [['rosmaster', '--core', '-p', '11311', '-w', '3', '__log:=/root/.ros/log/cf8102ac-16b3-11ee-b9a0-02420a060005/master.log']]
+[roslaunch][INFO] 2023-06-29 19:33:24,083: process[master]: cwd will be [/root/.ros]
+[roslaunch][INFO] 2023-06-29 19:33:24,090: process[master]: started with pid [147]
+[roslaunch][INFO] 2023-06-29 19:33:24,091: master.is_running[http://localhost:11311]
+[roslaunch][INFO] 2023-06-29 19:33:24,193: master.is_running[http://localhost:11311]
+[roslaunch][INFO] 2023-06-29 19:33:24,294: master.is_running[http://localhost:11311]
+[roslaunch][INFO] 2023-06-29 19:33:24,395: master.is_running[http://localhost:11311]
+[roslaunch][INFO] 2023-06-29 19:33:24,398: master.is_running[http://localhost:11311]
+[roslaunch][INFO] 2023-06-29 19:33:24,399: ROS_MASTER_URI=http://localhost:11311
+[roslaunch][INFO] 2023-06-29 19:33:24,402: setting /run_id to cf8102ac-16b3-11ee-b9a0-02420a060005
+[roslaunch][INFO] 2023-06-29 19:33:24,404: setting /roslaunch/uris/host_1befdf600173__43407' to http://1befdf600173:43407/
+[roslaunch][INFO] 2023-06-29 19:33:24,407: ... preparing to launch node of type [rosout/rosout]
+[roslaunch][INFO] 2023-06-29 19:33:24,407: create_node_process: package[rosout] type[rosout] machine[Machine(name[] env_loader[None] address[localhost] ssh_port[22] user[None] assignable[True] timeout[10.0])] master_uri[http://localhost:11311]
+[roslaunch][INFO] 2023-06-29 19:33:24,408: process[rosout-1]: env[{'ROS_VERSION': '1', 'PKG_CONFIG_PATH': '/django_ros_ws/devel/lib/pkgconfig:/opt/ros/noetic/lib/pkgconfig', 'ROS_PYTHON_VERSION': '3', 'HOSTNAME': '1befdf600173', 'ROS_PACKAGE_PATH': '/django_ros_ws/src:/opt/ros/noetic/share', 'ROSLISP_PACKAGE_DIRECTORIES': '/django_ros_ws/devel/share/common-lisp', 'PWD': '/root', 'HOME': '/root', 'LANG': 'C.UTF-8', 'ROS_ETC_DIR': '/opt/ros/noetic/etc/ros', 'CMAKE_PREFIX_PATH': '/django_ros_ws/devel:/opt/ros/noetic', 'PYTHONPATH': '/opt/ros/noetic/lib/python3/dist-packages', 'TERM': 'xterm', 'SHLVL': '1', 'TURTLEBOT3_MODEL': 'burger', 'ROS_MASTER_URI': 'http://localhost:11311', 'LD_LIBRARY_PATH': '/django_ros_ws/devel/lib:/opt/ros/noetic/lib', 'LC_ALL': 'C.UTF-8', 'PATH': '/opt/ros/noetic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'ROS_ROOT': '/opt/ros/noetic/share/ros', 'ROS_DISTRO': 'noetic', 'OLDPWD': '/django_ros_web', '_': '/opt/ros/noetic/bin/roslaunch', 'ROS_LOG_FILENAME': '/root/.ros/log/cf8102ac-16b3-11ee-b9a0-02420a060005/roslaunch-1befdf600173-135.log'}]
+[roslaunch][INFO] 2023-06-29 19:33:24,431: process[rosout-1]: args[['/opt/ros/noetic/lib/rosout/rosout', '__name:=rosout']]
+[roslaunch][INFO] 2023-06-29 19:33:24,432: ... created process [rosout-1]
+[roslaunch.pmon][INFO] 2023-06-29 19:33:24,432: ProcessMonitor.register[rosout-1]
+[roslaunch.pmon][INFO] 2023-06-29 19:33:24,432: ProcessMonitor.register[rosout-1] complete
+[roslaunch][INFO] 2023-06-29 19:33:24,432: ... registered process [rosout-1]
+[roslaunch][INFO] 2023-06-29 19:33:24,432: process[rosout-1]: starting os process
+[roslaunch][INFO] 2023-06-29 19:33:24,432: process[rosout-1]: start w/ args [['/opt/ros/noetic/lib/rosout/rosout', '__name:=rosout', '__log:=/root/.ros/log/cf8102ac-16b3-11ee-b9a0-02420a060005/rosout-1.log']]
+[roslaunch][INFO] 2023-06-29 19:33:24,432: process[rosout-1]: cwd will be [/root/.ros]
+[roslaunch][INFO] 2023-06-29 19:33:24,438: process[rosout-1]: started with pid [157]
+[roslaunch][INFO] 2023-06-29 19:33:24,439: ... successfully launched [rosout-1]
+[roslaunch][INFO] 2023-06-29 19:33:24,439: load_parameters starting ...
+[roslaunch][INFO] 2023-06-29 19:33:24,482: ... load_parameters complete
+[roslaunch][INFO] 2023-06-29 19:33:24,483: launch_nodes: launching local nodes ...
+[roslaunch][INFO] 2023-06-29 19:33:24,484: ... preparing to launch node of type [django_ros/django_ros_run.bash]
+[roslaunch][INFO] 2023-06-29 19:33:24,484: create_node_process: package[django_ros] type[django_ros_run.bash] machine[Machine(name[] env_loader[None] address[localhost] ssh_port[22] user[None] assignable[True] timeout[10.0])] master_uri[http://localhost:11311]
+[roslaunch][INFO] 2023-06-29 19:33:24,484: process[run_django_ros-2]: env[{'ROS_VERSION': '1', 'PKG_CONFIG_PATH': '/django_ros_ws/devel/lib/pkgconfig:/opt/ros/noetic/lib/pkgconfig', 'ROS_PYTHON_VERSION': '3', 'HOSTNAME': '1befdf600173', 'ROS_PACKAGE_PATH': '/django_ros_ws/src:/opt/ros/noetic/share', 'ROSLISP_PACKAGE_DIRECTORIES': '/django_ros_ws/devel/share/common-lisp', 'PWD': '/root', 'HOME': '/root', 'LANG': 'C.UTF-8', 'ROS_ETC_DIR': '/opt/ros/noetic/etc/ros', 'CMAKE_PREFIX_PATH': '/django_ros_ws/devel:/opt/ros/noetic', 'PYTHONPATH': '/opt/ros/noetic/lib/python3/dist-packages', 'TERM': 'xterm', 'SHLVL': '1', 'TURTLEBOT3_MODEL': 'burger', 'ROS_MASTER_URI': 'http://localhost:11311', 'LD_LIBRARY_PATH': '/django_ros_ws/devel/lib:/opt/ros/noetic/lib', 'LC_ALL': 'C.UTF-8', 'PATH': '/opt/ros/noetic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'ROS_ROOT': '/opt/ros/noetic/share/ros', 'ROS_DISTRO': 'noetic', 'OLDPWD': '/django_ros_web', '_': '/opt/ros/noetic/bin/roslaunch', 'ROS_LOG_FILENAME': '/root/.ros/log/cf8102ac-16b3-11ee-b9a0-02420a060005/roslaunch-1befdf600173-135.log'}]
+[roslaunch][INFO] 2023-06-29 19:33:24,486: process[run_django_ros-2]: args[['/django_ros_ws/src/django_ros/scripts/django_ros_run.bash', '__name:=run_django_ros']]
+[roslaunch][INFO] 2023-06-29 19:33:24,486: ... created process [run_django_ros-2]
+[roslaunch.pmon][INFO] 2023-06-29 19:33:24,486: ProcessMonitor.register[run_django_ros-2]
+[roslaunch.pmon][INFO] 2023-06-29 19:33:24,486: ProcessMonitor.register[run_django_ros-2] complete
+[roslaunch][INFO] 2023-06-29 19:33:24,486: ... registered process [run_django_ros-2]
+[roslaunch][INFO] 2023-06-29 19:33:24,486: process[run_django_ros-2]: starting os process
+[roslaunch][INFO] 2023-06-29 19:33:24,486: process[run_django_ros-2]: start w/ args [['/django_ros_ws/src/django_ros/scripts/django_ros_run.bash', '__name:=run_django_ros', '__log:=/root/.ros/log/cf8102ac-16b3-11ee-b9a0-02420a060005/run_django_ros-2.log']]
+[roslaunch][INFO] 2023-06-29 19:33:24,486: process[run_django_ros-2]: cwd will be [/root/.ros]
+[roslaunch][INFO] 2023-06-29 19:33:24,503: process[run_django_ros-2]: started with pid [160]
+[roslaunch][INFO] 2023-06-29 19:33:24,503: ... successfully launched [run_django_ros-2]
+[roslaunch][INFO] 2023-06-29 19:33:24,503: ... preparing to launch node of type [gazebo_ros/gzserver]
+[roslaunch][INFO] 2023-06-29 19:33:24,503: create_node_process: package[gazebo_ros] type[gzserver] machine[Machine(name[] env_loader[None] address[localhost] ssh_port[22] user[None] assignable[True] timeout[10.0])] master_uri[http://localhost:11311]
+[roslaunch][INFO] 2023-06-29 19:33:24,504: process[gazebo-3]: env[{'ROS_VERSION': '1', 'PKG_CONFIG_PATH': '/django_ros_ws/devel/lib/pkgconfig:/opt/ros/noetic/lib/pkgconfig', 'ROS_PYTHON_VERSION': '3', 'HOSTNAME': '1befdf600173', 'ROS_PACKAGE_PATH': '/django_ros_ws/src:/opt/ros/noetic/share', 'ROSLISP_PACKAGE_DIRECTORIES': '/django_ros_ws/devel/share/common-lisp', 'PWD': '/root', 'HOME': '/root', 'LANG': 'C.UTF-8', 'ROS_ETC_DIR': '/opt/ros/noetic/etc/ros', 'CMAKE_PREFIX_PATH': '/django_ros_ws/devel:/opt/ros/noetic', 'PYTHONPATH': '/opt/ros/noetic/lib/python3/dist-packages', 'TERM': 'xterm', 'SHLVL': '1', 'TURTLEBOT3_MODEL': 'burger', 'ROS_MASTER_URI': 'http://localhost:11311', 'LD_LIBRARY_PATH': '/django_ros_ws/devel/lib:/opt/ros/noetic/lib', 'LC_ALL': 'C.UTF-8', 'PATH': '/opt/ros/noetic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'ROS_ROOT': '/opt/ros/noetic/share/ros', 'ROS_DISTRO': 'noetic', 'OLDPWD': '/django_ros_web', '_': '/opt/ros/noetic/bin/roslaunch', 'ROS_LOG_FILENAME': '/root/.ros/log/cf8102ac-16b3-11ee-b9a0-02420a060005/roslaunch-1befdf600173-135.log'}]
+[roslaunch][INFO] 2023-06-29 19:33:24,514: process[gazebo-3]: args[['/opt/ros/noetic/lib/gazebo_ros/gzserver', '-e', 'ode', '/opt/ros/noetic/share/turtlebot3_gazebo/worlds/turtlebot3_world.world', '__name:=gazebo']]
+[roslaunch][INFO] 2023-06-29 19:33:24,514: ... created process [gazebo-3]
+[roslaunch.pmon][INFO] 2023-06-29 19:33:24,515: ProcessMonitor.register[gazebo-3]
+[roslaunch.pmon][INFO] 2023-06-29 19:33:24,515: ProcessMonitor.register[gazebo-3] complete
+[roslaunch][INFO] 2023-06-29 19:33:24,515: ... registered process [gazebo-3]
+[roslaunch][INFO] 2023-06-29 19:33:24,515: process[gazebo-3]: starting os process
+[roslaunch][INFO] 2023-06-29 19:33:24,515: process[gazebo-3]: start w/ args [['/opt/ros/noetic/lib/gazebo_ros/gzserver', '-e', 'ode', '/opt/ros/noetic/share/turtlebot3_gazebo/worlds/turtlebot3_world.world', '__name:=gazebo', '__log:=/root/.ros/log/cf8102ac-16b3-11ee-b9a0-02420a060005/gazebo-3.log']]
+[roslaunch][INFO] 2023-06-29 19:33:24,515: process[gazebo-3]: cwd will be [/root/.ros]
+[roslaunch][INFO] 2023-06-29 19:33:24,540: process[gazebo-3]: started with pid [162]
+[roslaunch][INFO] 2023-06-29 19:33:24,540: ... successfully launched [gazebo-3]
+[roslaunch][INFO] 2023-06-29 19:33:24,541: ... preparing to launch node of type [gazebo_ros/gzclient]
+[roslaunch][INFO] 2023-06-29 19:33:24,541: create_node_process: package[gazebo_ros] type[gzclient] machine[Machine(name[] env_loader[None] address[localhost] ssh_port[22] user[None] assignable[True] timeout[10.0])] master_uri[http://localhost:11311]
+[roslaunch][INFO] 2023-06-29 19:33:24,542: process[gazebo_gui-4]: env[{'ROS_VERSION': '1', 'PKG_CONFIG_PATH': '/django_ros_ws/devel/lib/pkgconfig:/opt/ros/noetic/lib/pkgconfig', 'ROS_PYTHON_VERSION': '3', 'HOSTNAME': '1befdf600173', 'ROS_PACKAGE_PATH': '/django_ros_ws/src:/opt/ros/noetic/share', 'ROSLISP_PACKAGE_DIRECTORIES': '/django_ros_ws/devel/share/common-lisp', 'PWD': '/root', 'HOME': '/root', 'LANG': 'C.UTF-8', 'ROS_ETC_DIR': '/opt/ros/noetic/etc/ros', 'CMAKE_PREFIX_PATH': '/django_ros_ws/devel:/opt/ros/noetic', 'PYTHONPATH': '/opt/ros/noetic/lib/python3/dist-packages', 'TERM': 'xterm', 'SHLVL': '1', 'TURTLEBOT3_MODEL': 'burger', 'ROS_MASTER_URI': 'http://localhost:11311', 'LD_LIBRARY_PATH': '/django_ros_ws/devel/lib:/opt/ros/noetic/lib', 'LC_ALL': 'C.UTF-8', 'PATH': '/opt/ros/noetic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'ROS_ROOT': '/opt/ros/noetic/share/ros', 'ROS_DISTRO': 'noetic', 'OLDPWD': '/django_ros_web', '_': '/opt/ros/noetic/bin/roslaunch', 'ROS_LOG_FILENAME': '/root/.ros/log/cf8102ac-16b3-11ee-b9a0-02420a060005/roslaunch-1befdf600173-135.log'}]
+[roslaunch][INFO] 2023-06-29 19:33:24,547: process[gazebo_gui-4]: args[['/opt/ros/noetic/lib/gazebo_ros/gzclient', '__name:=gazebo_gui']]
+[roslaunch][INFO] 2023-06-29 19:33:24,547: ... created process [gazebo_gui-4]
+[roslaunch.pmon][INFO] 2023-06-29 19:33:24,548: ProcessMonitor.register[gazebo_gui-4]
+[roslaunch.pmon][INFO] 2023-06-29 19:33:24,548: ProcessMonitor.register[gazebo_gui-4] complete
+[roslaunch][INFO] 2023-06-29 19:33:24,548: ... registered process [gazebo_gui-4]
+[roslaunch][INFO] 2023-06-29 19:33:24,548: process[gazebo_gui-4]: starting os process
+[roslaunch][INFO] 2023-06-29 19:33:24,548: process[gazebo_gui-4]: start w/ args [['/opt/ros/noetic/lib/gazebo_ros/gzclient', '__name:=gazebo_gui', '__log:=/root/.ros/log/cf8102ac-16b3-11ee-b9a0-02420a060005/gazebo_gui-4.log']]
+[roslaunch][INFO] 2023-06-29 19:33:24,548: process[gazebo_gui-4]: cwd will be [/root/.ros]
+[roslaunch][INFO] 2023-06-29 19:33:24,579: process[gazebo_gui-4]: started with pid [163]
+[roslaunch][INFO] 2023-06-29 19:33:24,580: ... successfully launched [gazebo_gui-4]
+[roslaunch][INFO] 2023-06-29 19:33:24,580: ... preparing to launch node of type [gazebo_ros/spawn_model]
+[roslaunch][INFO] 2023-06-29 19:33:24,580: create_node_process: package[gazebo_ros] type[spawn_model] machine[Machine(name[] env_loader[None] address[localhost] ssh_port[22] user[None] assignable[True] timeout[10.0])] master_uri[http://localhost:11311]
+[roslaunch][INFO] 2023-06-29 19:33:24,580: process[spawn_urdf-5]: env[{'ROS_VERSION': '1', 'PKG_CONFIG_PATH': '/django_ros_ws/devel/lib/pkgconfig:/opt/ros/noetic/lib/pkgconfig', 'ROS_PYTHON_VERSION': '3', 'HOSTNAME': '1befdf600173', 'ROS_PACKAGE_PATH': '/django_ros_ws/src:/opt/ros/noetic/share', 'ROSLISP_PACKAGE_DIRECTORIES': '/django_ros_ws/devel/share/common-lisp', 'PWD': '/root', 'HOME': '/root', 'LANG': 'C.UTF-8', 'ROS_ETC_DIR': '/opt/ros/noetic/etc/ros', 'CMAKE_PREFIX_PATH': '/django_ros_ws/devel:/opt/ros/noetic', 'PYTHONPATH': '/opt/ros/noetic/lib/python3/dist-packages', 'TERM': 'xterm', 'SHLVL': '1', 'TURTLEBOT3_MODEL': 'burger', 'ROS_MASTER_URI': 'http://localhost:11311', 'LD_LIBRARY_PATH': '/django_ros_ws/devel/lib:/opt/ros/noetic/lib', 'LC_ALL': 'C.UTF-8', 'PATH': '/opt/ros/noetic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'ROS_ROOT': '/opt/ros/noetic/share/ros', 'ROS_DISTRO': 'noetic', 'OLDPWD': '/django_ros_web', '_': '/opt/ros/noetic/bin/roslaunch', 'ROS_LOG_FILENAME': '/root/.ros/log/cf8102ac-16b3-11ee-b9a0-02420a060005/roslaunch-1befdf600173-135.log'}]
+[roslaunch][INFO] 2023-06-29 19:33:24,581: process[spawn_urdf-5]: args[['/opt/ros/noetic/lib/gazebo_ros/spawn_model', '-urdf', '-model', 'turtlebot3_burger', '-x', '-2.0', '-y', '-0.5', '-z', '0.0', '-param', 'robot_description', '__name:=spawn_urdf']]
+[roslaunch][INFO] 2023-06-29 19:33:24,581: ... created process [spawn_urdf-5]
+[roslaunch.pmon][INFO] 2023-06-29 19:33:24,581: ProcessMonitor.register[spawn_urdf-5]
+[roslaunch.pmon][INFO] 2023-06-29 19:33:24,582: ProcessMonitor.register[spawn_urdf-5] complete
+[roslaunch][INFO] 2023-06-29 19:33:24,582: ... registered process [spawn_urdf-5]
+[roslaunch][INFO] 2023-06-29 19:33:24,582: process[spawn_urdf-5]: starting os process
+[roslaunch][INFO] 2023-06-29 19:33:24,582: process[spawn_urdf-5]: start w/ args [['/opt/ros/noetic/lib/gazebo_ros/spawn_model', '-urdf', '-model', 'turtlebot3_burger', '-x', '-2.0', '-y', '-0.5', '-z', '0.0', '-param', 'robot_description', '__name:=spawn_urdf', '__log:=/root/.ros/log/cf8102ac-16b3-11ee-b9a0-02420a060005/spawn_urdf-5.log']]
+[roslaunch][INFO] 2023-06-29 19:33:24,582: process[spawn_urdf-5]: cwd will be [/root/.ros]
+[roslaunch][INFO] 2023-06-29 19:33:24,612: process[spawn_urdf-5]: started with pid [169]
+[roslaunch][INFO] 2023-06-29 19:33:24,621: ... successfully launched [spawn_urdf-5]
+[roslaunch][INFO] 2023-06-29 19:33:24,622: ... preparing to launch node of type [robot_state_publisher/robot_state_publisher]
+[roslaunch][INFO] 2023-06-29 19:33:24,623: create_node_process: package[robot_state_publisher] type[robot_state_publisher] machine[Machine(name[] env_loader[None] address[localhost] ssh_port[22] user[None] assignable[True] timeout[10.0])] master_uri[http://localhost:11311]
+[roslaunch][INFO] 2023-06-29 19:33:24,623: process[robot_state_publisher-6]: env[{'ROS_VERSION': '1', 'PKG_CONFIG_PATH': '/django_ros_ws/devel/lib/pkgconfig:/opt/ros/noetic/lib/pkgconfig', 'ROS_PYTHON_VERSION': '3', 'HOSTNAME': '1befdf600173', 'ROS_PACKAGE_PATH': '/django_ros_ws/src:/opt/ros/noetic/share', 'ROSLISP_PACKAGE_DIRECTORIES': '/django_ros_ws/devel/share/common-lisp', 'PWD': '/root', 'HOME': '/root', 'LANG': 'C.UTF-8', 'ROS_ETC_DIR': '/opt/ros/noetic/etc/ros', 'CMAKE_PREFIX_PATH': '/django_ros_ws/devel:/opt/ros/noetic', 'PYTHONPATH': '/opt/ros/noetic/lib/python3/dist-packages', 'TERM': 'xterm', 'SHLVL': '1', 'TURTLEBOT3_MODEL': 'burger', 'ROS_MASTER_URI': 'http://localhost:11311', 'LD_LIBRARY_PATH': '/django_ros_ws/devel/lib:/opt/ros/noetic/lib', 'LC_ALL': 'C.UTF-8', 'PATH': '/opt/ros/noetic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'ROS_ROOT': '/opt/ros/noetic/share/ros', 'ROS_DISTRO': 'noetic', 'OLDPWD': '/django_ros_web', '_': '/opt/ros/noetic/bin/roslaunch', 'ROS_LOG_FILENAME': '/root/.ros/log/cf8102ac-16b3-11ee-b9a0-02420a060005/roslaunch-1befdf600173-135.log'}]
+[roslaunch][INFO] 2023-06-29 19:33:24,632: process[robot_state_publisher-6]: args[['/opt/ros/noetic/lib/robot_state_publisher/robot_state_publisher', '__name:=robot_state_publisher']]
+[roslaunch][INFO] 2023-06-29 19:33:24,635: ... created process [robot_state_publisher-6]
+[roslaunch.pmon][INFO] 2023-06-29 19:33:24,636: ProcessMonitor.register[robot_state_publisher-6]
+[roslaunch.pmon][INFO] 2023-06-29 19:33:24,636: ProcessMonitor.register[robot_state_publisher-6] complete
+[roslaunch][INFO] 2023-06-29 19:33:24,636: ... registered process [robot_state_publisher-6]
+[roslaunch][INFO] 2023-06-29 19:33:24,637: process[robot_state_publisher-6]: starting os process
+[roslaunch][INFO] 2023-06-29 19:33:24,637: process[robot_state_publisher-6]: start w/ args [['/opt/ros/noetic/lib/robot_state_publisher/robot_state_publisher', '__name:=robot_state_publisher', '__log:=/root/.ros/log/cf8102ac-16b3-11ee-b9a0-02420a060005/robot_state_publisher-6.log']]
+[roslaunch][INFO] 2023-06-29 19:33:24,638: process[robot_state_publisher-6]: cwd will be [/root/.ros]
+[roslaunch][INFO] 2023-06-29 19:33:24,722: process[robot_state_publisher-6]: started with pid [178]
+[roslaunch][INFO] 2023-06-29 19:33:24,724: ... successfully launched [robot_state_publisher-6]
+[roslaunch][INFO] 2023-06-29 19:33:24,726: ... preparing to launch node of type [gmapping/slam_gmapping]
+[roslaunch][INFO] 2023-06-29 19:33:24,727: create_node_process: package[gmapping] type[slam_gmapping] machine[Machine(name[] env_loader[None] address[localhost] ssh_port[22] user[None] assignable[True] timeout[10.0])] master_uri[http://localhost:11311]
+[roslaunch][INFO] 2023-06-29 19:33:24,727: process[turtlebot3_slam_gmapping-7]: env[{'ROS_VERSION': '1', 'PKG_CONFIG_PATH': '/django_ros_ws/devel/lib/pkgconfig:/opt/ros/noetic/lib/pkgconfig', 'ROS_PYTHON_VERSION': '3', 'HOSTNAME': '1befdf600173', 'ROS_PACKAGE_PATH': '/django_ros_ws/src:/opt/ros/noetic/share', 'ROSLISP_PACKAGE_DIRECTORIES': '/django_ros_ws/devel/share/common-lisp', 'PWD': '/root', 'HOME': '/root', 'LANG': 'C.UTF-8', 'ROS_ETC_DIR': '/opt/ros/noetic/etc/ros', 'CMAKE_PREFIX_PATH': '/django_ros_ws/devel:/opt/ros/noetic', 'PYTHONPATH': '/opt/ros/noetic/lib/python3/dist-packages', 'TERM': 'xterm', 'SHLVL': '1', 'TURTLEBOT3_MODEL': 'burger', 'ROS_MASTER_URI': 'http://localhost:11311', 'LD_LIBRARY_PATH': '/django_ros_ws/devel/lib:/opt/ros/noetic/lib', 'LC_ALL': 'C.UTF-8', 'PATH': '/opt/ros/noetic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'ROS_ROOT': '/opt/ros/noetic/share/ros', 'ROS_DISTRO': 'noetic', 'OLDPWD': '/django_ros_web', '_': '/opt/ros/noetic/bin/roslaunch', 'ROS_LOG_FILENAME': '/root/.ros/log/cf8102ac-16b3-11ee-b9a0-02420a060005/roslaunch-1befdf600173-135.log'}]
+[roslaunch][INFO] 2023-06-29 19:33:24,729: process[turtlebot3_slam_gmapping-7]: args[['/opt/ros/noetic/lib/gmapping/slam_gmapping', '__name:=turtlebot3_slam_gmapping']]
+[roslaunch][INFO] 2023-06-29 19:33:24,733: ... created process [turtlebot3_slam_gmapping-7]
+[roslaunch.pmon][INFO] 2023-06-29 19:33:24,734: ProcessMonitor.register[turtlebot3_slam_gmapping-7]
+[roslaunch.pmon][INFO] 2023-06-29 19:33:24,734: ProcessMonitor.register[turtlebot3_slam_gmapping-7] complete
+[roslaunch][INFO] 2023-06-29 19:33:24,735: ... registered process [turtlebot3_slam_gmapping-7]
+[roslaunch][INFO] 2023-06-29 19:33:24,735: process[turtlebot3_slam_gmapping-7]: starting os process
+[roslaunch][INFO] 2023-06-29 19:33:24,736: process[turtlebot3_slam_gmapping-7]: start w/ args [['/opt/ros/noetic/lib/gmapping/slam_gmapping', '__name:=turtlebot3_slam_gmapping', '__log:=/root/.ros/log/cf8102ac-16b3-11ee-b9a0-02420a060005/turtlebot3_slam_gmapping-7.log']]
+[roslaunch][INFO] 2023-06-29 19:33:24,736: process[turtlebot3_slam_gmapping-7]: cwd will be [/root/.ros]
+[roslaunch][ERROR] 2023-06-29 19:33:24,805: [run_django_ros-2] process has died [pid 160, exit code 2, cmd /django_ros_ws/src/django_ros/scripts/django_ros_run.bash __name:=run_django_ros __log:=/root/.ros/log/cf8102ac-16b3-11ee-b9a0-02420a060005/run_django_ros-2.log].
+log file: /root/.ros/log/cf8102ac-16b3-11ee-b9a0-02420a060005/run_django_ros-2*.log
+[roslaunch.pmon][INFO] 2023-06-29 19:33:24,808: ProcessMonitor.unregister[run_django_ros-2] starting
+[roslaunch.pmon][INFO] 2023-06-29 19:33:24,808: ProcessMonitor.unregister[run_django_ros-2] complete
+[roslaunch][INFO] 2023-06-29 19:33:24,839: process[turtlebot3_slam_gmapping-7]: started with pid [179]
+[roslaunch][INFO] 2023-06-29 19:33:24,843: ... successfully launched [turtlebot3_slam_gmapping-7]
+[roslaunch][INFO] 2023-06-29 19:33:24,844: ... preparing to launch node of type [rviz/rviz]
+[roslaunch][INFO] 2023-06-29 19:33:24,846: create_node_process: package[rviz] type[rviz] machine[Machine(name[] env_loader[None] address[localhost] ssh_port[22] user[None] assignable[True] timeout[10.0])] master_uri[http://localhost:11311]
+[roslaunch][INFO] 2023-06-29 19:33:24,848: process[rviz-8]: env[{'ROS_VERSION': '1', 'PKG_CONFIG_PATH': '/django_ros_ws/devel/lib/pkgconfig:/opt/ros/noetic/lib/pkgconfig', 'ROS_PYTHON_VERSION': '3', 'HOSTNAME': '1befdf600173', 'ROS_PACKAGE_PATH': '/django_ros_ws/src:/opt/ros/noetic/share', 'ROSLISP_PACKAGE_DIRECTORIES': '/django_ros_ws/devel/share/common-lisp', 'PWD': '/root', 'HOME': '/root', 'LANG': 'C.UTF-8', 'ROS_ETC_DIR': '/opt/ros/noetic/etc/ros', 'CMAKE_PREFIX_PATH': '/django_ros_ws/devel:/opt/ros/noetic', 'PYTHONPATH': '/opt/ros/noetic/lib/python3/dist-packages', 'TERM': 'xterm', 'SHLVL': '1', 'TURTLEBOT3_MODEL': 'burger', 'ROS_MASTER_URI': 'http://localhost:11311', 'LD_LIBRARY_PATH': '/django_ros_ws/devel/lib:/opt/ros/noetic/lib', 'LC_ALL': 'C.UTF-8', 'PATH': '/opt/ros/noetic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'ROS_ROOT': '/opt/ros/noetic/share/ros', 'ROS_DISTRO': 'noetic', 'OLDPWD': '/django_ros_web', '_': '/opt/ros/noetic/bin/roslaunch', 'ROS_LOG_FILENAME': '/root/.ros/log/cf8102ac-16b3-11ee-b9a0-02420a060005/roslaunch-1befdf600173-135.log'}]
+[roslaunch][ERROR] 2023-06-29 19:33:24,849: rviz
+ROS path [0]=/opt/ros/noetic/share/ros
+ROS path [1]=/django_ros_ws/src
+ROS path [2]=/opt/ros/noetic/share
+[roslaunch][ERROR] 2023-06-29 19:33:24,849: ERROR: cannot launch node of type [rviz/rviz]: rviz
+ROS path [0]=/opt/ros/noetic/share/ros
+ROS path [1]=/django_ros_ws/src
+ROS path [2]=/opt/ros/noetic/share
+[roslaunch][INFO] 2023-06-29 19:33:24,854: ... preparing to launch node of type [rosbridge_server/rosbridge_websocket]
+[roslaunch][INFO] 2023-06-29 19:33:24,856: create_node_process: package[rosbridge_server] type[rosbridge_websocket] machine[Machine(name[] env_loader[None] address[localhost] ssh_port[22] user[None] assignable[True] timeout[10.0])] master_uri[http://localhost:11311]
+[roslaunch][INFO] 2023-06-29 19:33:24,857: process[rosbridge_websocket-9]: env[{'ROS_VERSION': '1', 'PKG_CONFIG_PATH': '/django_ros_ws/devel/lib/pkgconfig:/opt/ros/noetic/lib/pkgconfig', 'ROS_PYTHON_VERSION': '3', 'HOSTNAME': '1befdf600173', 'ROS_PACKAGE_PATH': '/django_ros_ws/src:/opt/ros/noetic/share', 'ROSLISP_PACKAGE_DIRECTORIES': '/django_ros_ws/devel/share/common-lisp', 'PWD': '/root', 'HOME': '/root', 'LANG': 'C.UTF-8', 'ROS_ETC_DIR': '/opt/ros/noetic/etc/ros', 'CMAKE_PREFIX_PATH': '/django_ros_ws/devel:/opt/ros/noetic', 'PYTHONPATH': '/opt/ros/noetic/lib/python3/dist-packages', 'TERM': 'xterm', 'SHLVL': '1', 'TURTLEBOT3_MODEL': 'burger', 'ROS_MASTER_URI': 'http://localhost:11311', 'LD_LIBRARY_PATH': '/django_ros_ws/devel/lib:/opt/ros/noetic/lib', 'LC_ALL': 'C.UTF-8', 'PATH': '/opt/ros/noetic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'ROS_ROOT': '/opt/ros/noetic/share/ros', 'ROS_DISTRO': 'noetic', 'OLDPWD': '/django_ros_web', '_': '/opt/ros/noetic/bin/roslaunch', 'ROS_LOG_FILENAME': '/root/.ros/log/cf8102ac-16b3-11ee-b9a0-02420a060005/roslaunch-1befdf600173-135.log'}]
+[roslaunch][INFO] 2023-06-29 19:33:24,864: process[rosbridge_websocket-9]: args[['/opt/ros/noetic/lib/rosbridge_server/rosbridge_websocket', '__name:=rosbridge_websocket']]
+[roslaunch][INFO] 2023-06-29 19:33:24,865: ... created process [rosbridge_websocket-9]
+[roslaunch.pmon][INFO] 2023-06-29 19:33:24,865: ProcessMonitor.register[rosbridge_websocket-9]
+[roslaunch.pmon][INFO] 2023-06-29 19:33:24,866: ProcessMonitor.register[rosbridge_websocket-9] complete
+[roslaunch][INFO] 2023-06-29 19:33:24,866: ... registered process [rosbridge_websocket-9]
+[roslaunch][INFO] 2023-06-29 19:33:24,867: process[rosbridge_websocket-9]: starting os process
+[roslaunch][INFO] 2023-06-29 19:33:24,868: process[rosbridge_websocket-9]: start w/ args [['/opt/ros/noetic/lib/rosbridge_server/rosbridge_websocket', '__name:=rosbridge_websocket', '__log:=/root/.ros/log/cf8102ac-16b3-11ee-b9a0-02420a060005/rosbridge_websocket-9.log']]
+[roslaunch][INFO] 2023-06-29 19:33:24,869: process[rosbridge_websocket-9]: cwd will be [/root/.ros]
+[roslaunch][INFO] 2023-06-29 19:33:24,902: process[rosbridge_websocket-9]: started with pid [180]
+[roslaunch][INFO] 2023-06-29 19:33:24,905: ... successfully launched [rosbridge_websocket-9]
+[roslaunch][INFO] 2023-06-29 19:33:24,906: ... preparing to launch node of type [rosapi/rosapi_node]
+[roslaunch][INFO] 2023-06-29 19:33:24,906: create_node_process: package[rosapi] type[rosapi_node] machine[Machine(name[] env_loader[None] address[localhost] ssh_port[22] user[None] assignable[True] timeout[10.0])] master_uri[http://localhost:11311]
+[roslaunch][INFO] 2023-06-29 19:33:24,906: process[rosapi-10]: env[{'ROS_VERSION': '1', 'PKG_CONFIG_PATH': '/django_ros_ws/devel/lib/pkgconfig:/opt/ros/noetic/lib/pkgconfig', 'ROS_PYTHON_VERSION': '3', 'HOSTNAME': '1befdf600173', 'ROS_PACKAGE_PATH': '/django_ros_ws/src:/opt/ros/noetic/share', 'ROSLISP_PACKAGE_DIRECTORIES': '/django_ros_ws/devel/share/common-lisp', 'PWD': '/root', 'HOME': '/root', 'LANG': 'C.UTF-8', 'ROS_ETC_DIR': '/opt/ros/noetic/etc/ros', 'CMAKE_PREFIX_PATH': '/django_ros_ws/devel:/opt/ros/noetic', 'PYTHONPATH': '/opt/ros/noetic/lib/python3/dist-packages', 'TERM': 'xterm', 'SHLVL': '1', 'TURTLEBOT3_MODEL': 'burger', 'ROS_MASTER_URI': 'http://localhost:11311', 'LD_LIBRARY_PATH': '/django_ros_ws/devel/lib:/opt/ros/noetic/lib', 'LC_ALL': 'C.UTF-8', 'PATH': '/opt/ros/noetic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'ROS_ROOT': '/opt/ros/noetic/share/ros', 'ROS_DISTRO': 'noetic', 'OLDPWD': '/django_ros_web', '_': '/opt/ros/noetic/bin/roslaunch', 'ROS_LOG_FILENAME': '/root/.ros/log/cf8102ac-16b3-11ee-b9a0-02420a060005/roslaunch-1befdf600173-135.log'}]
+[roslaunch][INFO] 2023-06-29 19:33:24,910: process[rosapi-10]: args[['/opt/ros/noetic/lib/rosapi/rosapi_node', '__name:=rosapi']]
+[roslaunch][INFO] 2023-06-29 19:33:24,911: ... created process [rosapi-10]
+[roslaunch.pmon][INFO] 2023-06-29 19:33:24,911: ProcessMonitor.register[rosapi-10]
+[roslaunch.pmon][INFO] 2023-06-29 19:33:24,911: ProcessMonitor.register[rosapi-10] complete
+[roslaunch][INFO] 2023-06-29 19:33:24,911: ... registered process [rosapi-10]
+[roslaunch][INFO] 2023-06-29 19:33:24,911: process[rosapi-10]: starting os process
+[roslaunch][INFO] 2023-06-29 19:33:24,912: process[rosapi-10]: start w/ args [['/opt/ros/noetic/lib/rosapi/rosapi_node', '__name:=rosapi', '__log:=/root/.ros/log/cf8102ac-16b3-11ee-b9a0-02420a060005/rosapi-10.log']]
+[roslaunch][INFO] 2023-06-29 19:33:24,912: process[rosapi-10]: cwd will be [/root/.ros]
+[roslaunch][INFO] 2023-06-29 19:33:24,951: process[rosapi-10]: started with pid [181]
+[roslaunch][INFO] 2023-06-29 19:33:24,954: ... successfully launched [rosapi-10]
+[roslaunch][INFO] 2023-06-29 19:33:24,958: ... preparing to launch node of type [tf2_web_republisher/tf2_web_republisher]
+[roslaunch][INFO] 2023-06-29 19:33:24,958: create_node_process: package[tf2_web_republisher] type[tf2_web_republisher] machine[Machine(name[] env_loader[None] address[localhost] ssh_port[22] user[None] assignable[True] timeout[10.0])] master_uri[http://localhost:11311]
+[roslaunch][INFO] 2023-06-29 19:33:24,958: process[tf2_web_republisher-11]: env[{'ROS_VERSION': '1', 'PKG_CONFIG_PATH': '/django_ros_ws/devel/lib/pkgconfig:/opt/ros/noetic/lib/pkgconfig', 'ROS_PYTHON_VERSION': '3', 'HOSTNAME': '1befdf600173', 'ROS_PACKAGE_PATH': '/django_ros_ws/src:/opt/ros/noetic/share', 'ROSLISP_PACKAGE_DIRECTORIES': '/django_ros_ws/devel/share/common-lisp', 'PWD': '/root', 'HOME': '/root', 'LANG': 'C.UTF-8', 'ROS_ETC_DIR': '/opt/ros/noetic/etc/ros', 'CMAKE_PREFIX_PATH': '/django_ros_ws/devel:/opt/ros/noetic', 'PYTHONPATH': '/opt/ros/noetic/lib/python3/dist-packages', 'TERM': 'xterm', 'SHLVL': '1', 'TURTLEBOT3_MODEL': 'burger', 'ROS_MASTER_URI': 'http://localhost:11311', 'LD_LIBRARY_PATH': '/django_ros_ws/devel/lib:/opt/ros/noetic/lib', 'LC_ALL': 'C.UTF-8', 'PATH': '/opt/ros/noetic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'ROS_ROOT': '/opt/ros/noetic/share/ros', 'ROS_DISTRO': 'noetic', 'OLDPWD': '/django_ros_web', '_': '/opt/ros/noetic/bin/roslaunch', 'ROS_LOG_FILENAME': '/root/.ros/log/cf8102ac-16b3-11ee-b9a0-02420a060005/roslaunch-1befdf600173-135.log'}]
+[roslaunch][INFO] 2023-06-29 19:33:24,963: process[tf2_web_republisher-11]: args[['/opt/ros/noetic/lib/tf2_web_republisher/tf2_web_republisher', '__name:=tf2_web_republisher']]
+[roslaunch][INFO] 2023-06-29 19:33:24,963: ... created process [tf2_web_republisher-11]
+[roslaunch.pmon][INFO] 2023-06-29 19:33:24,963: ProcessMonitor.register[tf2_web_republisher-11]
+[roslaunch.pmon][INFO] 2023-06-29 19:33:24,963: ProcessMonitor.register[tf2_web_republisher-11] complete
+[roslaunch][INFO] 2023-06-29 19:33:24,964: ... registered process [tf2_web_republisher-11]
+[roslaunch][INFO] 2023-06-29 19:33:24,964: process[tf2_web_republisher-11]: starting os process
+[roslaunch][INFO] 2023-06-29 19:33:24,964: process[tf2_web_republisher-11]: start w/ args [['/opt/ros/noetic/lib/tf2_web_republisher/tf2_web_republisher', '__name:=tf2_web_republisher', '__log:=/root/.ros/log/cf8102ac-16b3-11ee-b9a0-02420a060005/tf2_web_republisher-11.log']]
+[roslaunch][INFO] 2023-06-29 19:33:24,964: process[tf2_web_republisher-11]: cwd will be [/root/.ros]
+[roslaunch][INFO] 2023-06-29 19:33:24,981: process[tf2_web_republisher-11]: started with pid [183]
+[roslaunch][INFO] 2023-06-29 19:33:24,985: ... successfully launched [tf2_web_republisher-11]
+[roslaunch][INFO] 2023-06-29 19:33:24,986: ... preparing to launch node of type [robot_pose_publisher/robot_pose_publisher]
+[roslaunch][INFO] 2023-06-29 19:33:24,986: create_node_process: package[robot_pose_publisher] type[robot_pose_publisher] machine[Machine(name[] env_loader[None] address[localhost] ssh_port[22] user[None] assignable[True] timeout[10.0])] master_uri[http://localhost:11311]
+[roslaunch][INFO] 2023-06-29 19:33:24,986: process[run_robot_pose_publisher-12]: env[{'ROS_VERSION': '1', 'PKG_CONFIG_PATH': '/django_ros_ws/devel/lib/pkgconfig:/opt/ros/noetic/lib/pkgconfig', 'ROS_PYTHON_VERSION': '3', 'HOSTNAME': '1befdf600173', 'ROS_PACKAGE_PATH': '/django_ros_ws/src:/opt/ros/noetic/share', 'ROSLISP_PACKAGE_DIRECTORIES': '/django_ros_ws/devel/share/common-lisp', 'PWD': '/root', 'HOME': '/root', 'LANG': 'C.UTF-8', 'ROS_ETC_DIR': '/opt/ros/noetic/etc/ros', 'CMAKE_PREFIX_PATH': '/django_ros_ws/devel:/opt/ros/noetic', 'PYTHONPATH': '/opt/ros/noetic/lib/python3/dist-packages', 'TERM': 'xterm', 'SHLVL': '1', 'TURTLEBOT3_MODEL': 'burger', 'ROS_MASTER_URI': 'http://localhost:11311', 'LD_LIBRARY_PATH': '/django_ros_ws/devel/lib:/opt/ros/noetic/lib', 'LC_ALL': 'C.UTF-8', 'PATH': '/opt/ros/noetic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'ROS_ROOT': '/opt/ros/noetic/share/ros', 'ROS_DISTRO': 'noetic', 'OLDPWD': '/django_ros_web', '_': '/opt/ros/noetic/bin/roslaunch', 'ROS_LOG_FILENAME': '/root/.ros/log/cf8102ac-16b3-11ee-b9a0-02420a060005/roslaunch-1befdf600173-135.log'}]
+[roslaunch][INFO] 2023-06-29 19:33:24,996: process[run_robot_pose_publisher-12]: args[['/django_ros_ws/devel/lib/robot_pose_publisher/robot_pose_publisher', '__name:=run_robot_pose_publisher']]
+[roslaunch][INFO] 2023-06-29 19:33:24,997: ... created process [run_robot_pose_publisher-12]
+[roslaunch.pmon][INFO] 2023-06-29 19:33:24,997: ProcessMonitor.register[run_robot_pose_publisher-12]
+[roslaunch.pmon][INFO] 2023-06-29 19:33:24,998: ProcessMonitor.register[run_robot_pose_publisher-12] complete
+[roslaunch][INFO] 2023-06-29 19:33:24,998: ... registered process [run_robot_pose_publisher-12]
+[roslaunch][INFO] 2023-06-29 19:33:24,998: process[run_robot_pose_publisher-12]: starting os process
+[roslaunch][INFO] 2023-06-29 19:33:24,998: process[run_robot_pose_publisher-12]: start w/ args [['/django_ros_ws/devel/lib/robot_pose_publisher/robot_pose_publisher', '__name:=run_robot_pose_publisher', '__log:=/root/.ros/log/cf8102ac-16b3-11ee-b9a0-02420a060005/run_robot_pose_publisher-12.log']]
+[roslaunch][INFO] 2023-06-29 19:33:24,999: process[run_robot_pose_publisher-12]: cwd will be [/root/.ros]
+[roslaunch][INFO] 2023-06-29 19:33:25,010: process[run_robot_pose_publisher-12]: started with pid [190]
+[roslaunch][INFO] 2023-06-29 19:33:25,012: ... successfully launched [run_robot_pose_publisher-12]
+[roslaunch][INFO] 2023-06-29 19:33:25,013: ... preparing to launch node of type [django_ros/webserver.py]
+[roslaunch][INFO] 2023-06-29 19:33:25,013: create_node_process: package[django_ros] type[webserver.py] machine[Machine(name[] env_loader[None] address[localhost] ssh_port[22] user[None] assignable[True] timeout[10.0])] master_uri[http://localhost:11311]
+[roslaunch][INFO] 2023-06-29 19:33:25,013: process[webserver-13]: env[{'ROS_VERSION': '1', 'PKG_CONFIG_PATH': '/django_ros_ws/devel/lib/pkgconfig:/opt/ros/noetic/lib/pkgconfig', 'ROS_PYTHON_VERSION': '3', 'HOSTNAME': '1befdf600173', 'ROS_PACKAGE_PATH': '/django_ros_ws/src:/opt/ros/noetic/share', 'ROSLISP_PACKAGE_DIRECTORIES': '/django_ros_ws/devel/share/common-lisp', 'PWD': '/root', 'HOME': '/root', 'LANG': 'C.UTF-8', 'ROS_ETC_DIR': '/opt/ros/noetic/etc/ros', 'CMAKE_PREFIX_PATH': '/django_ros_ws/devel:/opt/ros/noetic', 'PYTHONPATH': '/opt/ros/noetic/lib/python3/dist-packages', 'TERM': 'xterm', 'SHLVL': '1', 'TURTLEBOT3_MODEL': 'burger', 'ROS_MASTER_URI': 'http://localhost:11311', 'LD_LIBRARY_PATH': '/django_ros_ws/devel/lib:/opt/ros/noetic/lib', 'LC_ALL': 'C.UTF-8', 'PATH': '/opt/ros/noetic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'ROS_ROOT': '/opt/ros/noetic/share/ros', 'ROS_DISTRO': 'noetic', 'OLDPWD': '/django_ros_web', '_': '/opt/ros/noetic/bin/roslaunch', 'ROS_LOG_FILENAME': '/root/.ros/log/cf8102ac-16b3-11ee-b9a0-02420a060005/roslaunch-1befdf600173-135.log'}]
+[roslaunch][INFO] 2023-06-29 19:33:25,014: process[webserver-13]: args[['/django_ros_ws/src/django_ros/scripts/webserver.py', '--webpath', '/', '__name:=webserver']]
+[roslaunch][INFO] 2023-06-29 19:33:25,015: ... created process [webserver-13]
+[roslaunch.pmon][INFO] 2023-06-29 19:33:25,015: ProcessMonitor.register[webserver-13]
+[roslaunch.pmon][INFO] 2023-06-29 19:33:25,015: ProcessMonitor.register[webserver-13] complete
+[roslaunch][INFO] 2023-06-29 19:33:25,015: ... registered process [webserver-13]
+[roslaunch][INFO] 2023-06-29 19:33:25,015: process[webserver-13]: starting os process
+[roslaunch][INFO] 2023-06-29 19:33:25,016: process[webserver-13]: start w/ args [['/django_ros_ws/src/django_ros/scripts/webserver.py', '--webpath', '/', '__name:=webserver', '__log:=/root/.ros/log/cf8102ac-16b3-11ee-b9a0-02420a060005/webserver-13.log']]
+[roslaunch][INFO] 2023-06-29 19:33:25,016: process[webserver-13]: cwd will be [/root/.ros]
+[roslaunch][INFO] 2023-06-29 19:33:25,023: process[webserver-13]: started with pid [195]
+[roslaunch][INFO] 2023-06-29 19:33:25,025: ... successfully launched [webserver-13]
+[roslaunch][INFO] 2023-06-29 19:33:25,026: ... launch_nodes complete
+[roslaunch.pmon][INFO] 2023-06-29 19:33:25,026: registrations completed <ProcessMonitor(ProcessMonitor-1, started daemon 140671251408640)>
+[roslaunch.parent][INFO] 2023-06-29 19:33:25,026: ... roslaunch parent running, waiting for process exit
+[roslaunch][INFO] 2023-06-29 19:33:25,026: spin
+[roslaunch][ERROR] 2023-06-29 19:33:29,432: [gazebo_gui-4] process has died [pid 163, exit code 134, cmd /opt/ros/noetic/lib/gazebo_ros/gzclient __name:=gazebo_gui __log:=/root/.ros/log/cf8102ac-16b3-11ee-b9a0-02420a060005/gazebo_gui-4.log].
+log file: /root/.ros/log/cf8102ac-16b3-11ee-b9a0-02420a060005/gazebo_gui-4*.log
+[roslaunch.pmon][INFO] 2023-06-29 19:33:29,434: ProcessMonitor.unregister[gazebo_gui-4] starting
+[roslaunch.pmon][INFO] 2023-06-29 19:33:29,435: ProcessMonitor.unregister[gazebo_gui-4] complete
+[roslaunch][INFO] 2023-06-29 19:33:30,474: [spawn_urdf-5] process has finished cleanly
+log file: /root/.ros/log/cf8102ac-16b3-11ee-b9a0-02420a060005/spawn_urdf-5*.log
+[roslaunch.pmon][INFO] 2023-06-29 19:33:30,475: ProcessMonitor.unregister[spawn_urdf-5] starting
+[roslaunch.pmon][INFO] 2023-06-29 19:33:30,475: ProcessMonitor.unregister[spawn_urdf-5] complete
+[roslaunch.pmon][INFO] 2023-06-29 19:34:04,315: ProcessMonitor.shutdown <ProcessMonitor(ProcessMonitor-1, started daemon 140671251408640)>
+[roslaunch.pmon][INFO] 2023-06-29 19:34:04,340: ProcessMonitor._post_run <ProcessMonitor(ProcessMonitor-1, started daemon 140671251408640)>
+[roslaunch.pmon][INFO] 2023-06-29 19:34:04,340: ProcessMonitor._post_run <ProcessMonitor(ProcessMonitor-1, started daemon 140671251408640)>: remaining procs are [<roslaunch.nodeprocess.LocalProcess object at 0x7ff093fa19d0>, <roslaunch.nodeprocess.LocalProcess object at 0x7ff094039f40>, <roslaunch.nodeprocess.LocalProcess object at 0x7ff094039940>, <roslaunch.nodeprocess.LocalProcess object at 0x7ff094039c70>, <roslaunch.nodeprocess.LocalProcess object at 0x7ff09408c5b0>, <roslaunch.nodeprocess.LocalProcess object at 0x7ff094039be0>, <roslaunch.nodeprocess.LocalProcess object at 0x7ff094120e20>, <roslaunch.nodeprocess.LocalProcess object at 0x7ff094120280>, <roslaunch.nodeprocess.LocalProcess object at 0x7ff0927662e0>, <roslaunch.nodeprocess.LocalProcess object at 0x7ff092766070>]
+[roslaunch.pmon][INFO] 2023-06-29 19:34:04,345: ProcessMonitor exit: killing webserver-13
+[roslaunch.pmon][INFO] 2023-06-29 19:34:04,345: ProcessMonitor exit: killing run_robot_pose_publisher-12
+[roslaunch][INFO] 2023-06-29 19:34:04,348: [run_robot_pose_publisher-12] killing on exit
+[roslaunch][INFO] 2023-06-29 19:34:04,349: process[run_robot_pose_publisher-12]: killing os process with pid[190] pgid[190]
+[roslaunch][INFO] 2023-06-29 19:34:04,349: [run_robot_pose_publisher-12] sending SIGINT to pgid [190]
+[roslaunch][INFO] 2023-06-29 19:34:04,349: [run_robot_pose_publisher-12] sent SIGINT to pgid [190]
+[roslaunch.pmon][INFO] 2023-06-29 19:34:04,349: ProcessMonitor exit: killing tf2_web_republisher-11
+[roslaunch][INFO] 2023-06-29 19:34:04,349: [tf2_web_republisher-11] killing on exit
+[roslaunch][INFO] 2023-06-29 19:34:04,349: process[tf2_web_republisher-11]: killing os process with pid[183] pgid[183]
+[roslaunch][INFO] 2023-06-29 19:34:04,349: [tf2_web_republisher-11] sending SIGINT to pgid [183]
+[roslaunch][INFO] 2023-06-29 19:34:04,349: [tf2_web_republisher-11] sent SIGINT to pgid [183]
+[roslaunch.pmon][INFO] 2023-06-29 19:34:04,349: ProcessMonitor exit: killing rosapi-10
+[roslaunch][INFO] 2023-06-29 19:34:04,348: [webserver-13] killing on exit
+[roslaunch][INFO] 2023-06-29 19:34:04,386: process[webserver-13]: killing os process with pid[195] pgid[195]
+[roslaunch][INFO] 2023-06-29 19:34:04,387: [webserver-13] sending SIGINT to pgid [195]
+[roslaunch][INFO] 2023-06-29 19:34:04,385: [rosapi-10] killing on exit
+[roslaunch][INFO] 2023-06-29 19:34:04,388: process[rosapi-10]: killing os process with pid[181] pgid[181]
+[roslaunch][INFO] 2023-06-29 19:34:04,390: [rosapi-10] sending SIGINT to pgid [181]
+[roslaunch][INFO] 2023-06-29 19:34:04,390: [rosapi-10] sent SIGINT to pgid [181]
+[roslaunch][INFO] 2023-06-29 19:34:04,388: [webserver-13] sent SIGINT to pgid [195]
+[roslaunch.pmon][INFO] 2023-06-29 19:34:04,370: ProcessMonitor exit: killing rosbridge_websocket-9
+[roslaunch][INFO] 2023-06-29 19:34:04,401: [rosbridge_websocket-9] killing on exit
+[roslaunch][INFO] 2023-06-29 19:34:04,401: process[rosbridge_websocket-9]: killing os process with pid[180] pgid[180]
+[roslaunch][INFO] 2023-06-29 19:34:04,401: [rosbridge_websocket-9] sending SIGINT to pgid [180]
+[roslaunch][INFO] 2023-06-29 19:34:04,403: [rosbridge_websocket-9] sent SIGINT to pgid [180]
+[roslaunch.pmon][INFO] 2023-06-29 19:34:04,468: ProcessMonitor exit: killing turtlebot3_slam_gmapping-7
+[roslaunch][INFO] 2023-06-29 19:34:04,469: [turtlebot3_slam_gmapping-7] killing on exit
+[roslaunch][INFO] 2023-06-29 19:34:04,472: process[turtlebot3_slam_gmapping-7]: killing os process with pid[179] pgid[179]
+[roslaunch][INFO] 2023-06-29 19:34:04,472: [turtlebot3_slam_gmapping-7] sending SIGINT to pgid [179]
+[roslaunch][INFO] 2023-06-29 19:34:04,481: [turtlebot3_slam_gmapping-7] sent SIGINT to pgid [179]
+[roslaunch.pmon][INFO] 2023-06-29 19:34:04,484: ProcessMonitor exit: killing robot_state_publisher-6
+[roslaunch][INFO] 2023-06-29 19:34:04,486: [robot_state_publisher-6] killing on exit
+[roslaunch][INFO] 2023-06-29 19:34:04,487: process[robot_state_publisher-6]: killing os process with pid[178] pgid[178]
+[roslaunch][INFO] 2023-06-29 19:34:04,488: [robot_state_publisher-6] sending SIGINT to pgid [178]
+[roslaunch][INFO] 2023-06-29 19:34:04,489: [robot_state_publisher-6] sent SIGINT to pgid [178]
+[roslaunch.pmon][INFO] 2023-06-29 19:34:04,485: ProcessMonitor exit: killing gazebo-3
+[roslaunch][INFO] 2023-06-29 19:34:04,501: [gazebo-3] killing on exit
+[roslaunch][INFO] 2023-06-29 19:34:04,502: process[gazebo-3]: killing os process with pid[162] pgid[162]
+[roslaunch][INFO] 2023-06-29 19:34:04,504: [gazebo-3] sending SIGINT to pgid [162]
+[roslaunch][INFO] 2023-06-29 19:34:04,504: [gazebo-3] sent SIGINT to pgid [162]
+[roslaunch][INFO] 2023-06-29 19:34:04,578: process[run_robot_pose_publisher-12]: SIGINT killed with return value 0
+[roslaunch][INFO] 2023-06-29 19:34:04,681: process[tf2_web_republisher-11]: SIGINT killed with return value 0
+[roslaunch][INFO] 2023-06-29 19:34:04,715: process[webserver-13]: SIGINT killed with return value 0
+[roslaunch][INFO] 2023-06-29 19:34:04,866: process[turtlebot3_slam_gmapping-7]: SIGINT killed with return value 0
+[roslaunch][INFO] 2023-06-29 19:34:04,876: process[robot_state_publisher-6]: SIGINT killed with return value 0
+[roslaunch][INFO] 2023-06-29 19:34:05,288: process[rosapi-10]: SIGINT killed with return value 0
+[roslaunch][INFO] 2023-06-29 19:34:05,627: process[gazebo-3]: SIGINT killed with return value -2
+[roslaunch][INFO] 2023-06-29 19:34:05,727: process[rosbridge_websocket-9]: SIGINT killed with return value 0
+[roslaunch.pmon][INFO] 2023-06-29 19:34:05,728: ProcessMonitor exit: killing rosout-1
+[roslaunch][INFO] 2023-06-29 19:34:05,728: [rosout-1] killing on exit
+[roslaunch][INFO] 2023-06-29 19:34:05,729: process[rosout-1]: killing os process with pid[157] pgid[157]
+[roslaunch][INFO] 2023-06-29 19:34:05,729: [rosout-1] sending SIGINT to pgid [157]
+[roslaunch][INFO] 2023-06-29 19:34:05,729: [rosout-1] sent SIGINT to pgid [157]
+[roslaunch][INFO] 2023-06-29 19:34:06,032: process[rosout-1]: SIGINT killed with return value 0
+[roslaunch.pmon][INFO] 2023-06-29 19:34:06,032: ProcessMonitor exit: killing master
+[roslaunch][INFO] 2023-06-29 19:34:06,032: [master] killing on exit
+[roslaunch][INFO] 2023-06-29 19:34:06,032: process[master]: killing os process with pid[147] pgid[147]
+[roslaunch][INFO] 2023-06-29 19:34:06,032: [master] sending SIGINT to pgid [147]
+[roslaunch][INFO] 2023-06-29 19:34:06,032: [master] sent SIGINT to pgid [147]
+[roslaunch][INFO] 2023-06-29 19:34:06,233: process[master]: SIGINT killed with return value 0
+[roslaunch.pmon][INFO] 2023-06-29 19:34:06,233: ProcessMonitor exit: cleaning up data structures and signals
+[roslaunch.pmon][INFO] 2023-06-29 19:34:06,233: ProcessMonitor exit: pmon has shutdown
+[roslaunch][INFO] 2023-06-29 19:34:06,234: process monitor is done spinning, initiating full shutdown
+[roslaunch][INFO] 2023-06-29 19:34:06,234: runner.stop()
+[roslaunch][INFO] 2023-06-29 19:34:06,234: shutting down processing monitor...
+[roslaunch][INFO] 2023-06-29 19:34:06,234: shutting down processing monitor <ProcessMonitor(ProcessMonitor-1, stopped daemon 140671251408640)>
+[roslaunch.pmon][INFO] 2023-06-29 19:34:06,234: ProcessMonitor.shutdown <ProcessMonitor(ProcessMonitor-1, stopped daemon 140671251408640)>
+[roslaunch][INFO] 2023-06-29 19:34:06,234: ... shutting down processing monitor complete
+[roslaunch][INFO] 2023-06-29 19:34:06,234: done
+[roslaunch.pmon][INFO] 2023-06-29 19:34:06,234: ProcessMonitor.shutdown <ProcessMonitor(ProcessMonitor-1, stopped daemon 140671251408640)>
+[rospy.core][INFO] 2023-06-29 19:34:06,237: signal_shutdown [atexit]

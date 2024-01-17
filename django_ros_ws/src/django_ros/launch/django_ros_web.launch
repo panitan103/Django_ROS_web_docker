@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<launch>
+  
+  <node name="run_django_ros" pkg="django_ros" type="django_ros_run.bash" /> 
+  
+  <!--arg name="map_file" default="$(find django_ros)/maps/room168_map.yaml"/-->
+	<!--node name="map_server" pkg="map_server" type="map_server" args="$(arg map_file)"/-->
+
+  <arg name="turtle"              default="false"/>
+  <arg name="realsense"           default="false"/>
+  <arg name="web_socket"          default="false"/>
+
+  <arg name="slam"                default="gmapping"/>
+  <arg name="map_location"        default="$(env HOME)/map.yaml"/>
+
+  <arg name="mode_turtles"        default="mapping"/>
+  <arg name="mode_realsense"      default="camera"/>
+
+  <arg name="stream_realsense"    default="false"/>
+  <arg name="stream_image"        default="false"/>
+
+  <arg name="width_cam"           default="640"/>
+  <arg name="height_cam"          default="480"/>
+  <arg name="fps_cam"             default="6"/>
+  <arg name="camera_reset"        default="false"/>
+  <arg name="model"               default="false"/>
+  
+  <group if="$(arg turtle)">
+    <include file="$(find django_ros)/launch/turtlebot_sim.launch">
+     
+      <arg name="slam"          value="$(arg slam)" />
+      <arg name="mode"          value="$(arg mode_turtles)" />
+      <arg name="map_location"  value="$(arg map_location)" />
+    </include> 	
+  </group>
+
+  <group if="$(arg realsense)">
+    <include file="$(find django_ros)/launch/realsense_pointcloud_demo.launch">
+      
+      <arg name="mode"             value="$(arg mode_realsense)" />
+      <arg name="stream"           value="$(arg stream_realsense)" />
+      <arg name="width_cam"        value="$(arg width_cam)" />
+      <arg name="height_cam"       value="$(arg height_cam)" />
+      <arg name="fps_cam"          value="$(arg fps_cam)" />
+      <arg name="camera_reset"     value="$(arg camera_reset)" />
+      <arg name="model"            value="$(arg model)" />
+    </include> 	
+  </group>
+
+  <group if="$(arg web_socket)">
+    <include file="$(find django_ros)/launch/web_socket.launch"/>
+  </group>
+
+  <group if="$(arg stream_image)">
+    <include file="$(find django_ros)/launch/image_stream.launch"/>
+  </group>
+  
+</launch>

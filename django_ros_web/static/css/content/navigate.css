@@ -1,0 +1,27 @@
+#nav{
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0 0 40px;
+}
+#navigate{
+  display: flex;
+  flex-direction: row;
+}
+#console{
+  display: flex;
+  flex-direction: column;
+}
+.status-control,#robot_control,#map_control{
+  margin-top: 8px;
+}
+#console h1,#map_control,#navigate_control{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+#map_control,#navigate_control{
+  display: flex;
+  flex-direction: row;
+}

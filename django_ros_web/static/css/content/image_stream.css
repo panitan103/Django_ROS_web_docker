@@ -1,0 +1,30 @@
+#stream{
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0 0 40px;
+}
+#image_stream{
+  display: flex;
+  flex-direction: row;
+}
+#console{
+  display: flex;
+  flex-direction: column;
+}
+.topic-control{
+  margin-top: 8px;
+}
+#console h1,#update{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+
+}
+#update a{
+  text-decoration: none;
+}
+
+#update_topic{
+  display: flex;
+  flex-direction: row;
+}

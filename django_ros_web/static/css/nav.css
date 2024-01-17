@@ -1,0 +1,153 @@
+body{
+    width: 100%;
+    margin: 0px;
+    padding:0px;
+    min-width: 420px;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.nav-bar{
+    display: flex;
+    background: rgb(35, 34, 114);
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+    height: 80px;
+    width: 100%;
+    
+}
+.nav-toggle{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 30px;
+    
+    display: inline-block;
+    cursor: pointer;
+    
+    
+}
+.nav-toggle img{
+    width: 50px;
+}
+
+
+.dropdown-content{
+    position: absolute;
+    text-align: center;
+    justify-content: center;
+    display: none;
+    min-width: 50px;
+    
+    background: rgb(35, 34, 114);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.dropdown-content a {
+    text-decoration: none;
+    display: block;
+    font-size: 20px;
+    padding:1rem;
+    color: #fff;
+    
+}
+.dropdown-content a:hover {
+    background: rgb(147, 146, 255);
+}
+
+.logo-image{
+    width: 100px;
+    border: 5px solid #ffff;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    
+    position: relative;
+    
+}
+.logo-image:hover{
+    background-color: rgb(196, 196, 196);
+
+}
+.tab{
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 0;
+    display: none;
+    position: relative;  
+    
+}
+.nav-tab a{
+    display: none;
+    font-size: 15px;
+    text-decoration: none;
+    color: rgb(255, 255, 255); 
+}
+.nav-tab a:hover{
+    opacity: 0.5;
+}
+.nav-contact a{
+    display: none;
+    font-size: 15px;
+    text-decoration: none;
+    color: rgb(255, 255, 255); 
+}
+.nav-contact a:hover{
+    opacity: 0.5;
+}
+@media screen and (min-width:800px){
+    .nav-bar{
+        display: flex;
+        
+        flex-direction: row;
+    }
+    .logo-image{
+        width: 100px;
+        background-color: rgb(255, 255, 255);
+        border-radius: 10px;
+        border: 6px solid #ffff;
+        align-items: center;
+        justify-content: center;
+        margin: 40px 0px 40px 40px;
+        position: relative;
+        
+        
+    }
+    .nav-tab{
+        display: flex;
+        flex: 60%;
+        font-weight: bold;
+        margin-left: 50px;
+        
+    }
+    
+    .nav-tab a{
+        display: flex;
+        justify-content:flex-end;
+        flex-direction: row;
+        font-size: 20px;
+        margin: 30px;
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+
+
+    }
+    .nav-toggle{
+        display: none;
+    }
+    .nav-contact{
+        display: flex;
+        flex:20%;
+        justify-content:center;
+        margin-left: 50px;
+        font-weight: bold;
+    }
+    .nav-contact a{
+        display: flex;
+        font-size: 20px;
+        margin: 30px;
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+    
+    }
+
+}

@@ -1,0 +1,60 @@
+{%extends 'layout.html'%}
+{%load static%}
+{% block css%}
+<link rel="stylesheet" href="{% static "css/content/mapping.css"%}">
+<link rel="stylesheet" href="{% static "css/content/joy.css"%}">
+
+{%endblock%}
+
+{% block content%}
+
+
+<div id="mapping">
+    <div id="console">
+        <h1>Mapping</h1>
+
+        <div class="status-control">
+            <p>Linear : <span id="linear_status">0</span> m/s</p>
+            <p>Angular : <span id="angular_status">0</span> rad/s</p>
+        </div>
+
+        <div id="robot_control">
+
+            <div id="linear_control">
+                <button type="button" id="forward_linear_control">Forward</button>
+                <button type="button" id="backward_linear_control">Backward</button>
+            </div>
+
+            <div id="angular_control">
+                <button type="button" id="left_angular_control">Rotate Left</button>
+                <button type="button" id="right_angular_control">Rotate Right</button>
+            </div>
+
+            <div id="stop_control">
+                <button type="button" id="stop_all_control">STOP</button>
+            </div>
+            <form method="POST">
+                {% csrf_token %}
+                <div id="map_control">
+                    <button type="button" id="save_map">Save map</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div id="nav"></div>
+</div>
+
+
+
+{%endblock%}
+
+{% block script%}
+
+<script src="{% static "js/easeljs.min.js"%}"></script>
+<script src="{% static "js/eventemitter2.min.js"%}"></script>
+<script src="{% static "js/ros2d.js"%}"></script>
+<!--<script src="{% static "js/nav2d.js"%}"></script>-->
+<script src="{% static "js/content/controller.js"%}"></script>
+<script src="{% static "js/content/mapping.js"%}"></script>
+
+{%endblock%}

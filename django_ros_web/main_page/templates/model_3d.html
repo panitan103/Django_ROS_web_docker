@@ -1,0 +1,36 @@
+{%extends 'layout.html'%}
+{%load static%}
+{% block css%}
+
+
+{%endblock%}
+
+{% block content%}
+<h1>Simple URDF Example</h1>
+
+    
+<iframe id="model" src="http://localhost:8085/model_web/model.html" frameBorder="0" scrolling="no" allow="fullscreen" ></iframe>
+<script>
+    var CANVAS_WIDTH = (window.innerWidth)*0.55;
+    var CANVAS_HEIGHT = window.innerHeight - (window.innerHeight)*0.25;
+    document.getElementById("model").setAttribute("src", location.protocol+'//'+location.hostname+":8085/django_ros/model.html"); 
+    document.getElementById("model").setAttribute("width", String(CANVAS_WIDTH)); 
+    document.getElementById("model").setAttribute("height", String(CANVAS_HEIGHT)); 
+   
+</script>
+{%endblock%}
+
+
+{% block scripst%}
+
+<script src="{% static "js/three.js"%}"></script>
+<script src="{% static "js/STLLoader.js"%}"></script>
+<script src="{% static "js/ColladaLoader.js"%}"></script>
+<script src="{% static "js/easeljs.min.js"%}"></script>
+<script src="{% static "js/eventemitter2.min.js"%}"></script>
+<script src="{% static "js/ros3d.js"%}"></script>
+
+<script src="{% static "js/content/model_3d.js"%}"></script>
+
+
+{%endblock%}
